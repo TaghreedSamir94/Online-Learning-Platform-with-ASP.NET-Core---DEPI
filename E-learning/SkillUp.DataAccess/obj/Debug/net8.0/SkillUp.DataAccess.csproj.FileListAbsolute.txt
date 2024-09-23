@@ -1,0 +1,11 @@
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\bin\Debug\net8.0\SkillUp.DataAccess.deps.json
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\bin\Debug\net8.0\SkillUp.DataAccess.dll
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\bin\Debug\net8.0\SkillUp.DataAccess.pdb
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.AssemblyInfoInputs.cache
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.AssemblyInfo.cs
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.csproj.CoreCompileInputs.cache
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.dll
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\refint\SkillUp.DataAccess.dll
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\SkillUp.DataAccess.pdb
+D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\obj\Debug\net8.0\ref\SkillUp.DataAccess.dll

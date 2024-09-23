@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SkillUp.DataAccess</id>
+    <version>1.0.0</version>
+    <authors>SkillUp.DataAccess</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\VS REPO C#\Final-Porject\E-learning\SkillUp.DataAccess\bin\Debug\net8.0\SkillUp.DataAccess.dll" target="lib\net8.0\SkillUp.DataAccess.dll" />
+  </files>
+</package>
