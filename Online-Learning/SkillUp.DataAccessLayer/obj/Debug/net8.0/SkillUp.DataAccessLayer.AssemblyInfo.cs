@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillUp.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de5fd246eb59843650f92b2b2ef5f76bd2457d5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f834a6d2c51f6d92ace6db495526b7077515acbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillUp.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillUp.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
