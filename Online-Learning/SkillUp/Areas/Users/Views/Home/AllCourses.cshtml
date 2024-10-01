@@ -1,0 +1,93 @@
+﻿@using SkillUp.VMs.CoursesVMs;
+@model List<CoursesListVMs>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AllCourses</title>
+</head>
+<body>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Courses</h1>
+                    <nav aria-label="breadcrumb">
+                        <!-- <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Courses</li>
+                        </ol> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Courses Start -->
+
+   
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center px-3">Popular Courses</h6>
+                    <h1 class="mb-5" style="color: #fb873f;">Explore new and trending online courses</h1>
+                </div>
+                <div class="row g-4 py-2">
+
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="course-item shadow">
+                            <div class="position-relative overflow-hidden text-light image">
+                                <img class="img-fluid" src="@Url.Content($"~/Images/Courses/{item.ImgUrl}")" alt="@item.Title">
+                                <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#fb873f;"
+                                     class="px-2 py-1 fw-bold text-uppercase">
+                                    @item.Price.ToString("N2") EGP
+                                </div>
+
+                            </div>
+                            <div class="p-2 pb-0">
+
+                                <h5 class="mb-1">@item.Title</h5>
+                            </div>
+                            <div class="d-flex">
+                                <small class="flex-fill text-center py-1 px-2">
+                                    <i class="fa fa-star text-warning me-2"></i>
+                                    4.55
+                                </small>
+                                <small class="flex-fill text-center py-1 px-2">
+                                    <i class="fa fa-clock me-2"></i>@item.TotalHours
+                                </small>
+                                <small class="flex-fill text-center py-1 px-2">
+                                    <i class="fa fa-user me-2"></i>Beginner
+                                </small>
+                            </div>
+                            <div class="d-flex">
+                                <small class="flex-fill text-left p-2 px-2">
+                                    <i class="fa fa-user-edit me-2"></i>@item.InstructorName
+                                </small>
+
+                                <small class=" text-primary py-2 px-2 fw-bold fs-6" style="float:right;">
+                                    <a asp-area="Users" asp-controller="Home" asp-action="GetCourseById" asp-route-id="@item.ID">
+                                        Enroll
+                                        Now
+                                    </a><i class="fa fa-chevron-right me-2 fs-10"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                }
+               
+                </div>
+            </div>
+        </div>
+   
+   
+    <!-- Courses End -->
+</body>
+</html>

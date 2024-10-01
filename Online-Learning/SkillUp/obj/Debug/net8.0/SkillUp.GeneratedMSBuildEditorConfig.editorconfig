@@ -26,12 +26,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/Courses/AddCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xBZGRDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/Courses/CoursesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xDb3Vyc2VzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/Courses/EditCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ291cnNlc1xFZGl0Q291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/AllCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxBbGxDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/CourseDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxDb3Vyc2VEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/HomeCoursesSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxIb21lQ291cnNlc1NlY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/Index.cshtml]
@@ -52,6 +80,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_ValidationScriptsPartial.cshtml]

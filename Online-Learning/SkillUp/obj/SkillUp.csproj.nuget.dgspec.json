@@ -28,7 +28,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
+                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -46,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -59,6 +67,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -105,11 +117,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
-                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -127,6 +135,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -140,6 +152,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -187,8 +203,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
-                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj"
+              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
+                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj"
               }
             }
           }
