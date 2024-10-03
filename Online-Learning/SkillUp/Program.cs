@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SkillUp.BussinessLayer.Services;
 using SkillUp.DataAccessLayer.Data;
+using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
 // Register  services
 builder.Services.AddScoped<ICoursesService, CoursesService>();
+
+builder.Services.AddIdentity<User, Role>()
+                           .AddEntityFrameworkStores<ApplicationDbContext>()// stores meaning repository
+                           .AddDefaultTokenProviders();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

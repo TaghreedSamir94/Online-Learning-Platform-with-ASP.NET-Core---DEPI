@@ -254,3 +254,9 @@ D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEP
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

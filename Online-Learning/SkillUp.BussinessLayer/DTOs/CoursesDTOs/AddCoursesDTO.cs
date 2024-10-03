@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using SkillUp.DataAccessLayer.Entities;
+﻿using SkillUp.DataAccessLayer.Entities;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 

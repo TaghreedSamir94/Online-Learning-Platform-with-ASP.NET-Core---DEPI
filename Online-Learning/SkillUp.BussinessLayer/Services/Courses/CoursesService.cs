@@ -1,6 +1,4 @@
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Http;
-using SkillUp.BussinessLayer.DTOs;
+﻿using Microsoft.AspNetCore.Http;
 using SkillUp.BussinessLayer.DTOs.CoursesDTOs;
 using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories;

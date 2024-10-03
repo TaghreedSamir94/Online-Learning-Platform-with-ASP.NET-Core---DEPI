@@ -18309,10 +18309,6 @@
       "PackagePath": "staticwebassets\\Images\\Courses\\3e196309-1ccf-4f28-95bd-9b4c12a11d57.jpg"
     },
     {
-      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\407f26e8-9090-4a10-bddb-d857116fb029.png",
-      "PackagePath": "staticwebassets\\Images\\Courses\\407f26e8-9090-4a10-bddb-d857116fb029.png"
-    },
-    {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\409f4cb3-9d41-4492-bb9f-af5836873303.png",
       "PackagePath": "staticwebassets\\Images\\Courses\\409f4cb3-9d41-4492-bb9f-af5836873303.png"
     },
@@ -18345,6 +18341,14 @@
       "PackagePath": "staticwebassets\\Images\\Courses\\a087084e-5db7-471d-a53c-1f123730b1be.png"
     },
     {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\ac1a0977-3e33-49a5-bd5d-0b8e3ab0c279.png",
+      "PackagePath": "staticwebassets\\Images\\Courses\\ac1a0977-3e33-49a5-bd5d-0b8e3ab0c279.png"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\acca1b50-59a4-4dd0-b9ad-a9b0d83f9b3c.png",
+      "PackagePath": "staticwebassets\\Images\\Courses\\acca1b50-59a4-4dd0-b9ad-a9b0d83f9b3c.png"
+    },
+    {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\b59e7c74-510d-464f-a77e-84b40c109f2b.jpg",
       "PackagePath": "staticwebassets\\Images\\Courses\\b59e7c74-510d-464f-a77e-84b40c109f2b.jpg"
     },
@@ -18361,12 +18365,424 @@
       "PackagePath": "staticwebassets\\Images\\Courses\\ce80f650-7177-49d0-a96f-0a2652da5e74.jpg"
     },
     {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\d9b89aa3-cb28-4f59-9383-99f908507320.png",
+      "PackagePath": "staticwebassets\\Images\\Courses\\d9b89aa3-cb28-4f59-9383-99f908507320.png"
+    },
+    {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\ded86801-f082-4f18-b7ba-f5a866fd5ce9.png",
       "PackagePath": "staticwebassets\\Images\\Courses\\ded86801-f082-4f18-b7ba-f5a866fd5ce9.png"
     },
     {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\Images\\Courses\\df04e540-be1b-4c2f-ae07-58ef684fd36c.png",
       "PackagePath": "staticwebassets\\Images\\Courses\\df04e540-be1b-4c2f-ae07-58ef684fd36c.png"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\css\\style.css",
+      "PackagePath": "staticwebassets\\SignAssets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\SignAssets\\css\\style.css.map"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\css\\material-design-iconic-font.css",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\css\\material-design-iconic-font.css"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\css\\material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\css\\material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\material-icon\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-300italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-500italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-600.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-700italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-800italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-900.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\poppins-v5-latin-regular.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-700italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-italic.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.eot",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.eot"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.svg",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.svg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.ttf",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.ttf"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.woff",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.woff"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.woff2",
+      "PackagePath": "staticwebassets\\SignAssets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.woff2"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\images\\signin-image.jpg",
+      "PackagePath": "staticwebassets\\SignAssets\\images\\signin-image.jpg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\images\\signup-image.jpg",
+      "PackagePath": "staticwebassets\\SignAssets\\images\\signup-image.jpg"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\js\\main.js",
+      "PackagePath": "staticwebassets\\SignAssets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\common\\extend.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\common\\extend.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\common\\fonts.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\common\\fonts.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\common\\global.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\common\\global.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\common\\minxi.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\common\\minxi.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\common\\variables.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\common\\variables.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\layouts\\main.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\layouts\\main.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\layouts\\responsive.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\layouts\\responsive.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\SignAssets\\scss\\style.scss"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\vendor\\jquery\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\SignAssets\\vendor\\jquery\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\SignAssets\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\SignAssets\\vendor\\jquery\\jquery.min.js"
     },
     {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\UserAssets\\css\\bootstrap.min.css",
