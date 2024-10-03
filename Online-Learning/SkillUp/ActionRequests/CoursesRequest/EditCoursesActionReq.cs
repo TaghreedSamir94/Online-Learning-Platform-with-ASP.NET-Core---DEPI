@@ -24,8 +24,6 @@ namespace SkillUp.ActionRequests.CoursesRequest
         [DisplayName("Total Hours")]
         public float TotalHours { get; set; }
 
-		[Required]
-        [DisplayName("Image")]
         public IFormFile ImageFile { get; set; }
 
 

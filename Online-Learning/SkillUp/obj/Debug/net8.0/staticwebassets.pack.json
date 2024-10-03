@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SkillUp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SkillUp.bundle.scp.css"
-    },
-    {
       "Id": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\wwwroot\\AdminAssets\\build\\css\\custom.css",
       "PackagePath": "staticwebassets\\AdminAssets\\build\\css\\custom.css"
     },

@@ -9,7 +9,7 @@ namespace SkillUp.ActionRequests.CoursesRequest
 	{
 		public int ID { get; set; }
 		
-        public string ImgUrl { get; set; }
+        //public string ImgUrl { get; set; }
 
 		
 
@@ -19,7 +19,7 @@ namespace SkillUp.ActionRequests.CoursesRequest
 			return new DeleteCoursesDTO
 			{
 				ID = req.ID,
-				ImgUrl = req.ImgUrl,
+				//ImgUrl = req.ImgUrl,
 			
 			};
 		}

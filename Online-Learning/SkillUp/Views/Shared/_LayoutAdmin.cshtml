@@ -83,8 +83,8 @@
                                 <li>
                                     <a><i class="fa fa-desktop"></i> Courses <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a asp-area="Admin" asp-controller="Courses" asp-action="Create">Add Course</a></li>
-                                        <li><a asp-area="Admin" asp-controller="Courses" asp-action="Index">Courses List</a></li>
+                                        <li><a  asp-controller="Courses" asp-action="Create">Add Course</a></li>
+                                        <li><a  asp-controller="Courses" asp-action="Index">Courses List</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -204,7 +204,6 @@
             </div>
            
     <div>
-       <partial name="_Notifications"/>
         @RenderBody()
     </div>
     <footer>
@@ -246,5 +245,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="~/AdminAssets/build/js/custom.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
