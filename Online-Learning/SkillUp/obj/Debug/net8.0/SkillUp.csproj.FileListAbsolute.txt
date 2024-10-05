@@ -260,3 +260,7 @@ D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEP
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\EntityFramework.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll

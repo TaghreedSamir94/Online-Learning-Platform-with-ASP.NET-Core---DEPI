@@ -14,6 +14,7 @@
                     <h2 class="form-title">sign up</h2>
                     @using (Html.BeginForm("Register", "Account", FormMethod.Post))
                     {
+                        @Html.ValidationSummary(true)
                         <div class="form-group">
                             <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
                             <span asp-validation-for="UserName" class="text-danger"></span>

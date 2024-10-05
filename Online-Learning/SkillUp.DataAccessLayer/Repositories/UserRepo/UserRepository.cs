@@ -6,15 +6,14 @@ using SkillUp.DataAccessLayer.Repositories.UserRepo;
 
 namespace SkillUp.DataAccessLayer.Repositories
 {
-    public class UserRepository : IGenericRepository<User>, IUserRepository
+    public class UserRepository : GenericRepository<User>, IUserRepository
     {
         private readonly ApplicationDbContext _context;
         private readonly DbSet<User> _dbSet;
 
-        public UserRepository(ApplicationDbContext context)
+        public UserRepository(ApplicationDbContext context):base(context)
         {
-            _context = context;
-            _dbSet = _context.Set<User>();
+
         }
         public async Task<User> AddAsync(User t)
         {
@@ -55,11 +54,21 @@ namespace SkillUp.DataAccessLayer.Repositories
             return await _context.SaveChangesAsync();
         }
 
+        public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<User> UpdateAsync(User t)
         {
             _dbSet.Update(t);
             await SaveAsync();
             return t;
         }
+
+   
+      
+
+     
     }
 }

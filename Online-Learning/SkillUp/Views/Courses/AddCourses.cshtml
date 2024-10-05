@@ -77,7 +77,7 @@
 								<div class="item form-group">
 									<label asp-for="Description" class="col-form-label col-md-3 col-sm-3 label-align"></label>
 									<div class="col-md-6 col-sm-6 ">
-										<textarea asp-for="Description" class="form-control">Description</textarea>
+										<textarea id="tiny" asp-for="Description" class="form-control">Description</textarea>
 										<span asp-validation-for="Description" class="text-danger"></span>
 									</div>
 								</div>
@@ -119,6 +119,7 @@
 									
 									<div class="col-md-6 col-sm-6 ">
 										<input asp-for="ImageFile" type="file"  class="form-control">
+										<span asp-validation-for="ImageFile" class="text-danger"></span>
 									</div>
 								</div>
 
@@ -158,3 +159,7 @@
 
 </body>
 </html>
+
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}

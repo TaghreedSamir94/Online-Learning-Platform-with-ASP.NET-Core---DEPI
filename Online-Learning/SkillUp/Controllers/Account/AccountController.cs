@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SkillUp.ActionRequests.UserRequest;
 using SkillUp.DataAccessLayer.Entities;
 
-namespace presantationlayer.Controllers
+namespace SkillUp.Controllers
 {
     public class AccountController : Controller
     {
@@ -23,8 +23,15 @@ namespace presantationlayer.Controllers
         //Register Create a new Student or Instructor 
 
         [HttpPost]
-        public async Task<IActionResult> Register(CreateUserActionRequest Request)
+        public async Task<IActionResult> Register(CreateUserActionRequest Request, string ReturnUrl)
         {
+            var existingUser = await _UserManager.FindByNameAsync(Request.UserName);
+
+            if (existingUser != null)
+            {
+                ModelState.AddModelError(string.Empty, "you are already Registered");
+                return View(Request);
+            }
 
             var user = new User
             {
@@ -33,8 +40,6 @@ namespace presantationlayer.Controllers
                 TypeOfUser = Request.TypeOfUser
             };
 
-            var existingUser = await _UserManager.FindByNameAsync(Request.UserName);
-
             if (existingUser != null)
             {
                 // if user is registered then check pass
@@ -42,6 +47,10 @@ namespace presantationlayer.Controllers
 
                 if (passwordValid)
                 {
+                    if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
+                    {
+                        return LocalRedirect(ReturnUrl);
+                    }
                     // if pass is true then goto action sigin
                     return RedirectToAction("SignIn", "Account");
                 }
@@ -57,8 +66,8 @@ namespace presantationlayer.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: true);
-                    return RedirectToAction("SignIn", "Account");//❌❌
+                    //await _signInManager.SignInAsync(user, isPersistent: true);
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

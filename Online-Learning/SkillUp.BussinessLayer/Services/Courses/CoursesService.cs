@@ -2,6 +2,7 @@
 using SkillUp.BussinessLayer.DTOs.CoursesDTOs;
 using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories;
+using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 
 
 
@@ -12,7 +13,7 @@ namespace SkillUp.BussinessLayer.Services
     {
        
         private readonly ICoursesRepository _courseRepository;
-       
+        
 
         public CoursesService(ICoursesRepository coursesRepository)
         {
@@ -23,6 +24,13 @@ namespace SkillUp.BussinessLayer.Services
 		#region AddCourses
 		public async Task AddCourses(AddCoursesDTO addcoursesDTO, IFormFile? imageFile, string fileLocation)
         {
+            // Ensure title is unique (validation)
+            var existingCourse = await _courseRepository.GetAllAsync();
+            if (existingCourse.Any(c => c.Title == addcoursesDTO.Title))
+            {
+                throw new ArgumentException("A course with this title already exists.");
+            }
+
 
             if (imageFile != null && imageFile.Length > 0)
             {
@@ -48,7 +56,7 @@ namespace SkillUp.BussinessLayer.Services
             }
             else
 			{
-				// Handle the case where no image is provided (set to a default or handle as necessary)
+				// Handle case where no image is provided (set to a default or handle as necessary)
 				throw new InvalidOperationException("Image file must be provided.");
 			}
 
@@ -56,7 +64,7 @@ namespace SkillUp.BussinessLayer.Services
 
             await _courseRepository.AddAsync(course);
 
-            await _courseRepository.SaveChangesAsync();
+            await _courseRepository.SaveAsync(); //ensure changes are saned in db
 
         }
 		#endregion
@@ -64,8 +72,8 @@ namespace SkillUp.BussinessLayer.Services
 		#region DeleteCourses
 		public async Task DeleteCourses(DeleteCoursesDTO deleteCoursesDTO, string fileLocation)
         {
-            var course = await _courseRepository.GetCoursesByIDAsync(deleteCoursesDTO.ID);
-			if (course == null)
+            var course = await _courseRepository.GetByIdAsync(deleteCoursesDTO.ID);
+            if (course == null)
 			{
 				throw new KeyNotFoundException("Course not found.");
 			}
@@ -83,7 +91,7 @@ namespace SkillUp.BussinessLayer.Services
 			}
 
 			await _courseRepository.DeleteAsync(course.ID);
-            await _courseRepository.SaveChangesAsync();
+            await _courseRepository.SaveAsync();
         }
 		#endregion
 
@@ -108,9 +116,10 @@ namespace SkillUp.BussinessLayer.Services
 		#region GetnewCourses
 		public async Task<List<HomeCoursesDTO>> GetLastCourses(int count)
 		{
-			var courses = await _courseRepository.GetLastCoursesAsync(count);
+			var courses = await _courseRepository.GetLastCoursesAsync(count); 
 
-			return courses.Select(c => new HomeCoursesDTO 
+
+            return courses.Select(c => new HomeCoursesDTO 
 			{
 				ID = c.ID,
 				Title = c.Title,
@@ -127,7 +136,7 @@ namespace SkillUp.BussinessLayer.Services
 		#region GetById
 		public async Task<CoursesDetailsDTO?> GetById(int id)
         {
-            var course = await _courseRepository.GetCoursesByIDAsync(id);
+            var course = await _courseRepository.GetByIdAsync(id);
             if (course == null) 
             {
 				throw new KeyNotFoundException("Course not found.");
@@ -149,7 +158,7 @@ namespace SkillUp.BussinessLayer.Services
 		#region UpdateCourses
 		public async Task UpdateCourses(int id, EditCoursesDTO updatedCourses, IFormFile? imageFile, string fileLocation)
         {
-			var course = await _courseRepository.GetCoursesByIDAsync(id);
+			var course = await _courseRepository.GetByIdAsync(id);
 			if (id == 0)
 			{
 				throw new KeyNotFoundException("Course not found.");
@@ -208,7 +217,7 @@ namespace SkillUp.BussinessLayer.Services
             course.ImgUrl = updatedCourses.ImgUrl;
 
             await _courseRepository.UpdateAsync(course);
-            await _courseRepository.SaveChangesAsync();
+            await _courseRepository.SaveAsync();
 
 			
 

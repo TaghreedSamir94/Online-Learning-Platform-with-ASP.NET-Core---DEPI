@@ -1,24 +1,11 @@
 ﻿
 using SkillUp.DataAccessLayer.Entities;
+using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 
 namespace SkillUp.DataAccessLayer.Repositories
 {
-    public interface ICoursesRepository
+    public interface ICoursesRepository : IGenericRepository<Courses>
     {
-        Task<List<Courses>> GetAllAsync();
-
-		Task<List<Courses>> GetLastCoursesAsync(int count); //to display new courses in home page
-
-		Task<Courses> GetCoursesByIDAsync(int id);
-
-        Task AddAsync(Courses courses);
-
-        Task UpdateAsync(Courses courses);
-
-        Task DeleteAsync(int id);
-
-        Task SaveChangesAsync();
-
-
+        Task<List<Courses>> GetLastCoursesAsync(int count); // to display new courses on the homepage
     }
 }

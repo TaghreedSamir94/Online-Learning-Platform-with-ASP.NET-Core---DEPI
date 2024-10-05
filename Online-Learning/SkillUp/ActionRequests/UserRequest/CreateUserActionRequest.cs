@@ -25,7 +25,7 @@ namespace SkillUp.ActionRequests.UserRequest
 
         [Required(ErrorMessage = "Type of User is required")]
         public string TypeOfUser { get; set; }
-        public List<string> Errors { get; set; }
+        //public List<string> Errors { get; set; }
 
     }
     public static class RegisterUserExtensions
