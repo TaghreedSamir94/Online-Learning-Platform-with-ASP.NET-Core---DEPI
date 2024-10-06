@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SkillUp.BussinessLayer.Services;
+using SkillUp.BussinessLayer.Services.Enrollment;
 using SkillUp.BussinessLayer.Services.Users;
 using SkillUp.DataAccessLayer.Data;
 using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories;
+using SkillUp.DataAccessLayer.Repositories.Enrollment;
 using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 using SkillUp.DataAccessLayer.Repositories.UserRepo;
 
@@ -24,12 +26,15 @@ namespace SkillUp
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
             // Register repositories
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
             builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>(); 
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
             // Register  services
             builder.Services.AddScoped<ICoursesService, CoursesService>();
             builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)//cookies

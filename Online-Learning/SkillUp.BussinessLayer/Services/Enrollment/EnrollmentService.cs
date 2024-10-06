@@ -14,7 +14,7 @@ namespace SkillUp.BussinessLayer.Services.Enrollment
     public class EnrollmentService : IEnrollmentService
     {
        
-            private readonly IEnrollmentRepository _enrollmentRepository; // Assume an interface for repository
+            private readonly IEnrollmentRepository _enrollmentRepository; 
             private readonly IMapper _mapper;
 
             public EnrollmentService(IEnrollmentRepository enrollmentRepository, IMapper mapper)
