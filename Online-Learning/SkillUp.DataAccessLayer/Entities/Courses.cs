@@ -34,5 +34,7 @@ namespace SkillUp.DataAccessLayer.Entities
         [DisplayName("Image")]
         public string ImgUrl { get; set; } = "defaultImage.jpg";
 
+        public ICollection<EnrollmentC> Enrollments { get; set; }
+
 	}
 }

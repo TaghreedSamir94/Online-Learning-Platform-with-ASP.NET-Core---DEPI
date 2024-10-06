@@ -14,7 +14,9 @@ namespace SkillUp.DataAccessLayer.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Courses> Courses { get; set; }
-       
+
+        public DbSet<EnrollmentC> Enrollments { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied
