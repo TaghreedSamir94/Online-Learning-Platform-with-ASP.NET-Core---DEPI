@@ -1,19 +1,24 @@
-﻿using SkillUp.BussinessLayer.DTOs.UsersDTOs;
+﻿using Microsoft.AspNetCore.Identity;
+using SkillUp.BussinessLayer.DTOs;
+using SkillUp.BussinessLayer.Services;
 using SkillUp.DataAccessLayer.Entities;
-using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SkillUp.BussinessLayer.Services.Users
+namespace SkillUp.BussinessLayer
 {
     public class UserService : IUserService
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        
 
         public UserService(UserManager<User> userManager, SignInManager<User> signinManger)
         {
             _userManager = userManager;
-            _signInManager = signinManger;
+            _signInManager =signinManger;
         }
         public async Task<IdentityResult> RegisterUser(UserDTO user)
         {

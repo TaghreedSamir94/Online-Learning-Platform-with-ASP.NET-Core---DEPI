@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SkillUp.DataAccessLayer.Repositories.GenericRepositories
-{ 
-   
+{
+
     public interface IGenericRepository<T> where T : class
     {
         Task<List<T>> GetAllAsync();
@@ -17,4 +17,3 @@ namespace SkillUp.DataAccessLayer.Repositories.GenericRepositories
         Task SaveAsync();
     }
 }
-

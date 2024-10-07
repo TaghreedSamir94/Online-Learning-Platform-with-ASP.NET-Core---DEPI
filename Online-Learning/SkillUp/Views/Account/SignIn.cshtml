@@ -1,8 +1,8 @@
 ﻿@using SkillUp.ActionRequests.UserRequest
 @model SignInActionRequest
-@{
-    ViewData["Title"] = "SignIn";
 
+@{
+    ViewBag.Title = "Sign In";
 }
 
 <!-- Sing in Form -->
@@ -10,15 +10,15 @@
     <div class="container">
         <div class="signin-content">
             <div class="signin-image">
-                <figure><img src="~/SignAssets/images/signin-image.jpg" alt="sign up image"></figure>
-                <a href="@Url.Action("Register", "Account")" class="signup-image-link">Create an account</a>
+                <figure><img src="~/images/signin-image.jpg" alt="sign up image"></figure>
+                <a asp-controller="Account" asp-action="Register" class="signup-image-link">Create an account</a>
             </div>
 
             <div class="signin-form">
-                <h2 class="form-title">Sign In</h2>
+                <h2 class="form-title">Sign up</h2>
                 @using (Html.BeginForm("SignIn", "Account", FormMethod.Post, new { id = "login-form", @class = "register-form" }))
                 {
-
+                    @Html.ValidationSummary(true)
                     <div class="form-group">
                         <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
                         <span asp-validation-for="UserName" class="text-danger"></span>
@@ -49,4 +49,6 @@
         </div>
     </div>
 </section>
-
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

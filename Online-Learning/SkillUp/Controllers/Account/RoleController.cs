@@ -4,7 +4,7 @@ using SkillUp.ActionRequests.UserRequest;
 using SkillUp.DataAccessLayer.Entities;
 
 
-namespace presantationlayer.Controllers
+namespace SkillUp.Controllers
 {
     public class RoleController : Controller
     {

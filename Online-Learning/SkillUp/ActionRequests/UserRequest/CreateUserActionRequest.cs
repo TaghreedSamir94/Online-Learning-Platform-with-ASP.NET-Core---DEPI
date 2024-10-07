@@ -1,10 +1,11 @@
-﻿using SkillUp.BussinessLayer.DTOs.UsersDTOs;
+﻿using SkillUp.BussinessLayer.DTOs;
 using System.ComponentModel.DataAnnotations;
 
 namespace SkillUp.ActionRequests.UserRequest
 {
     public class CreateUserActionRequest
     {
+
         [Required(ErrorMessage = "There is an issue with either the Username ")]
         [StringLength(100, ErrorMessage = "name cannot exceed 100 characters")]
         public string UserName { get; set; }
@@ -25,7 +26,7 @@ namespace SkillUp.ActionRequests.UserRequest
 
         [Required(ErrorMessage = "Type of User is required")]
         public string TypeOfUser { get; set; }
-        //public List<string> Errors { get; set; }
+        public List<string> Errors { get; set; }
 
     }
     public static class RegisterUserExtensions
@@ -41,4 +42,3 @@ namespace SkillUp.ActionRequests.UserRequest
             };
     }
 }
-

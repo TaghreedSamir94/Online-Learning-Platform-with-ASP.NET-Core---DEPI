@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SkillUp.DataAccessLayer.Data;
+using SkillUp.DataAccessLayer;
 using SkillUp.DataAccessLayer.Entities;
 
 namespace SkillUp.DataAccessLayer.Repositories.GenericRepositories
@@ -29,14 +29,14 @@ namespace SkillUp.DataAccessLayer.Repositories.GenericRepositories
         public async Task<T> AddAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
-            await SaveAsync(); 
+            await SaveAsync();
             return entity;
         }
 
         public async Task<T> UpdateAsync(T entity)
         {
             _dbSet.Update(entity);
-            await SaveAsync(); 
+            await SaveAsync();
             return entity;
         }
 
@@ -58,8 +58,6 @@ namespace SkillUp.DataAccessLayer.Repositories.GenericRepositories
             await _context.SaveChangesAsync();
         }
 
-      
+
     }
 }
-
-

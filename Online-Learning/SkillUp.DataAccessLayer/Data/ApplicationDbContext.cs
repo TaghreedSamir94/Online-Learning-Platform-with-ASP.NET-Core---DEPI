@@ -1,9 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SkillUp.DataAccessLayer.Entities;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Reflection.Emit;
+using Azure;
+using SkillUp.DataAccessLayer.Entities;
 
-namespace SkillUp.DataAccessLayer.Data
+namespace SkillUp.DataAccessLayer
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
@@ -11,10 +13,11 @@ namespace SkillUp.DataAccessLayer.Data
         {
 
         }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Courses> Courses { get; set; }
-       
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied

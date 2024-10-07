@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SkillUp.DataAccessLayer.Data;
+using SkillUp.DataAccessLayer;
 using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 using SkillUp.DataAccessLayer.Repositories.UserRepo;
@@ -11,7 +11,7 @@ namespace SkillUp.DataAccessLayer.Repositories
         private readonly ApplicationDbContext _context;
         private readonly DbSet<User> _dbSet;
 
-        public UserRepository(ApplicationDbContext context):base(context)
+        public UserRepository(ApplicationDbContext context) : base(context)
         {
 
         }
@@ -66,9 +66,9 @@ namespace SkillUp.DataAccessLayer.Repositories
             return t;
         }
 
-   
-      
 
-     
+
+
+
     }
 }

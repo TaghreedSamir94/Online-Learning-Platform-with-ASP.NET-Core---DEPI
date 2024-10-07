@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using SkillUp.BussinessLayer.DTOs.CoursesDTOs;
+using SkillUp.BussinessLayer.Services;
+using SkillUp.DataAccessLayer;
 using SkillUp.DataAccessLayer.Entities;
 using SkillUp.DataAccessLayer.Repositories;
-using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 
 
 
 
-namespace SkillUp.BussinessLayer.Services
+namespace SkillUp.BussinessLayer
 {
     public class CoursesService : ICoursesService
     {

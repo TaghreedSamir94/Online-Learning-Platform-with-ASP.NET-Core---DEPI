@@ -1,8 +1,8 @@
-﻿
-using SkillUp.DataAccessLayer.Entities;
+﻿using SkillUp.DataAccessLayer.Entities;
+using SkillUp.DataAccessLayer.Repositories;
 using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 
-namespace SkillUp.DataAccessLayer.Repositories
+namespace SkillUp.DataAccessLayer
 {
     public interface ICoursesRepository : IGenericRepository<Courses>
     {

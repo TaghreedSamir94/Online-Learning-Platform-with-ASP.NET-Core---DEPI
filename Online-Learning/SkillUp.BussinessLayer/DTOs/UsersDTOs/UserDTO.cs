@@ -1,8 +1,13 @@
 ﻿using SkillUp.DataAccessLayer.Entities;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
-namespace SkillUp.BussinessLayer.DTOs.UsersDTOs
+namespace SkillUp.BussinessLayer.DTOs
 {
     public class UserDTO
     {
@@ -26,7 +31,7 @@ namespace SkillUp.BussinessLayer.DTOs.UsersDTOs
                 UserName = dto.UserName,
                 Email = dto.Email,
                 PasswordHash = dto.Password,
-                TypeOfUser = dto.TypeOfUser
+                TypeOfUser =dto.TypeOfUser
 
             };
     }

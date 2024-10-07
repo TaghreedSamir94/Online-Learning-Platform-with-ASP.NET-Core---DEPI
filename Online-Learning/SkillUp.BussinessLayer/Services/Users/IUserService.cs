@@ -1,12 +1,12 @@
-﻿using SkillUp.BussinessLayer.DTOs.UsersDTOs;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using SkillUp.BussinessLayer.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillUp.BussinessLayer.Services.Users
+namespace SkillUp.BussinessLayer.Services
 {
     public interface IUserService
     {

@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SkillUp.ActionRequests.UserRequest;
 using SkillUp.DataAccessLayer.Entities;
@@ -11,17 +10,13 @@ namespace SkillUp.Controllers
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _UserManager; //to allow me to read from app setting 
 
-
         public AccountController(SignInManager<User> signInManager, UserManager<User> userManager)
         {
             _signInManager = signInManager;
             _UserManager = userManager;
-
         }
 
-
         //Register Create a new Student or Instructor 
-
         [HttpPost]
         public async Task<IActionResult> Register(CreateUserActionRequest Request, string ReturnUrl)
         {
@@ -66,7 +61,7 @@ namespace SkillUp.Controllers
 
                 if (result.Succeeded)
                 {
-                    //await _signInManager.SignInAsync(user, isPersistent: true);
+                    await _signInManager.SignInAsync(user, isPersistent: true);
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -89,26 +84,43 @@ namespace SkillUp.Controllers
             return View();
         }
 
-
-        [HttpGet("SignIn")]
+        [HttpGet]
         public async Task<IActionResult> SignIn()
         {
             return View();
         }
+
         // log in user 
-        [HttpPost("SignIn")]
-        public async Task<IActionResult> SignIn(SignInActionRequest request)
+        [HttpPost]
+        public async Task<IActionResult> SignIn(SignInActionRequest request, string ReturnUrl)
         {
+
+            // found user name
             var user = await _UserManager.FindByNameAsync(request.UserName);
-            if (user != null)
+            if (user == null)
             {
-                var IsPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
-                if (IsPasswordValid)
-                {
-                    return Unauthorized(); //401 erorr
-                }
+                ModelState.AddModelError(string.Empty, "There is an issue with UserName");
+                return View(request);
             }
-            return RedirectToAction("Account", "Register");
+
+            //if pass is ture
+            var isPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
+            if (isPasswordValid)
+            {
+                // return to url
+                if (!string.IsNullOrEmpty(ReturnUrl))
+                {
+                    return LocalRedirect(ReturnUrl);
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                // pass is false
+                ModelState.AddModelError(string.Empty, "There is an issue with password");
+                return View(request);
+            }
         }
     }
 }
