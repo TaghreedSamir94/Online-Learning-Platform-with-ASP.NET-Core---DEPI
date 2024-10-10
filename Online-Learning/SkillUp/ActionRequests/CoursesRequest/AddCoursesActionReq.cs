@@ -31,7 +31,12 @@ namespace SkillUp.ActionRequests.CoursesRequest
         [Required(ErrorMessage = "Image is required")]
         public IFormFile ImageFile { get; set; }
 
-		public AddCoursesDTO ToDto()
+
+        [Required(ErrorMessage = "Image is required")]
+        [DisplayName("Promotion Video")]
+        public string PromotionalVideoUrl { get; set; }
+
+        public AddCoursesDTO ToDto()
         {
             return new AddCoursesDTO
             {
@@ -41,6 +46,7 @@ namespace SkillUp.ActionRequests.CoursesRequest
                 Price = Price,
                 TotalHours = TotalHours,
                 //ImgUrl = ImgUrl,
+                PromotionalVideoUrl = PromotionalVideoUrl
             };
         }
 

@@ -34,5 +34,9 @@ namespace SkillUp.DataAccessLayer.Entities
         [DisplayName("Image")]
         public string ImgUrl { get; set; } = "defaultImage.jpg";
 
-	}
+
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
+    }
 }

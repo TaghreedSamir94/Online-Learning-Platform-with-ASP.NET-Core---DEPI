@@ -30,7 +30,11 @@ namespace SkillUp.VMs.CoursesVMs
         public string ImgUrl { get; set; }
         public IFormFile ImageFile { get; set; }
 
-        public static explicit operator HomeCoursesVMs(HomeCoursesDTO dto)
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
+
+		public static explicit operator HomeCoursesVMs(HomeCoursesDTO dto)
         {
             return new HomeCoursesVMs
             {
@@ -41,6 +45,7 @@ namespace SkillUp.VMs.CoursesVMs
                 Price = dto.Price,
                 TotalHours = dto.TotalHours,
                 ImgUrl = dto.ImgUrl,
+                PromotionalVideoUrl = dto.PromotionalVideoUrl
             };
         }
     }

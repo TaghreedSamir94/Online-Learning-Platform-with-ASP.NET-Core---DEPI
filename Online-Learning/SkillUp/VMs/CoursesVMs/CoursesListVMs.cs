@@ -27,10 +27,14 @@ namespace SkillUp.VMs.CoursesVMs
         [DisplayName("Image")]
         public string ImgUrl { get; set; }
 
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
 
 
-        // Static explicit operator to convert DTOs to VMs
-        public static explicit operator CoursesListVMs(CoursesListDTO dto)
+
+		// Static explicit operator to convert DTOs to VMs
+		public static explicit operator CoursesListVMs(CoursesListDTO dto)
         {
             return new CoursesListVMs
             {
@@ -40,6 +44,7 @@ namespace SkillUp.VMs.CoursesVMs
                 Price = dto.Price,
                 TotalHours = dto.TotalHours,
                 ImgUrl = dto.ImgUrl,
+                PromotionalVideoUrl = dto.PromotionalVideoUrl,
 
             };
         }

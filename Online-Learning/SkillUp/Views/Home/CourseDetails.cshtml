@@ -1,16 +1,31 @@
 ﻿@using SkillUp.DataAccessLayer.Entities;
 @using SkillUp.VMs.CoursesVMs;
 @model CoursesDetailsVMs
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>CourseDetails</title>
-</head>
-<body>
-    
-    <h1> @Model.Title</h1>
-    <p>@Html.Raw(Model.Description)</p>
-</body>
-</html>
+<div class="row">
+    <div class="col-md-8">
+        <h1 class="mt-5">@Model.Title</h1>
+        <p>by <strong>@Model.InstructorName</strong></p>
+
+        <div class="course-video mb-4">
+            <iframe width="100%" height="400" src="@Model.PromotionalVideoUrl" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <h3>Course Description</h3>
+        <p>@Model.Description</p>
+    </div>
+
+    <div class="col-md-4">
+        <div class="price-box">
+            <h2>@Model.Price.ToString("C")</h2>
+            <button class="btn btn-primary">Enroll Now</button>
+        </div>
+
+        <h3>Instructor</h3>
+        <div class="instructor-box">
+            <img src="ProfilePictureUrl" alt="Instructor" class="img-fluid rounded-circle mb-2" />
+            <h4>Name</h4>
+            <p>Bio</p>
+        </div>
+    </div>
+</div>

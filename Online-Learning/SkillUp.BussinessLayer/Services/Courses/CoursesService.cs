@@ -151,7 +151,8 @@ namespace SkillUp.BussinessLayer.Services
                 Price = course.Price,
                 TotalHours = course.TotalHours,
                 ImgUrl = course.ImgUrl,
-            };
+				PromotionalVideoUrl = course.PromotionalVideoUrl
+			};
         }
 		#endregion
 
@@ -215,8 +216,9 @@ namespace SkillUp.BussinessLayer.Services
             course.Price = updatedCourses.Price;
             course.TotalHours = updatedCourses.TotalHours;
             course.ImgUrl = updatedCourses.ImgUrl;
+			course.PromotionalVideoUrl = updatedCourses.PromotionalVideoUrl;
 
-            await _courseRepository.UpdateAsync(course);
+			await _courseRepository.UpdateAsync(course);
             await _courseRepository.SaveAsync();
 
 			

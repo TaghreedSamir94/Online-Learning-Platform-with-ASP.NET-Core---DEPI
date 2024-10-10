@@ -31,6 +31,11 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
+
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -47,6 +52,10 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasDiscriminator().HasValue("IdentityRole");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -178,6 +187,10 @@ namespace SkillUp.DataAccessLayer.Migrations
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
+                    b.Property<string>("PromotionalVideoUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -197,6 +210,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Jeff Leek",
                             Price = 3980f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/lSwIe0TMUhc",
                             Title = "A Crash Course in Data Science",
                             TotalHours = 29f
                         },
@@ -207,6 +221,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Bhrugen Patel",
                             Price = 1250f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/q9RdQa6pMx4",
                             Title = "Blazor - The Complete Guide [.NET 9] [2024] [E-commerce]",
                             TotalHours = 12f
                         },
@@ -217,6 +232,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Jo Hughes",
                             Price = 300f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/vCUGYAdvLIs",
                             Title = "Learn to draw fashion with Adobe Illustrator CC - Beginners",
                             TotalHours = 5f
                         },
@@ -227,6 +243,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Jonathan Peters",
                             Price = 800f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/8p3hZ2Yonsc?list=PLdW0onEGGcNlrod2I8eWGdqFk7GYya-sU",
                             Title = "Music Theory",
                             TotalHours = 8f
                         },
@@ -237,6 +254,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Chris Haroun",
                             Price = 2600f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/GsQ2MiPZszw",
                             Title = "Introduction to Finance, Accounting, Modeling and Valuation",
                             TotalHours = 25f
                         },
@@ -247,6 +265,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                             ImgUrl = "defaultImage.jpg",
                             InstructorName = "Miran Fattah",
                             Price = 1250f,
+                            PromotionalVideoUrl = "https://www.youtube.com/embed/7P_LC_AX6sA",
                             Title = "Discrete Mathematics",
                             TotalHours = 18f
                         });
@@ -322,6 +341,13 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Role", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
+
+                    b.HasDiscriminator().HasValue("Role");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

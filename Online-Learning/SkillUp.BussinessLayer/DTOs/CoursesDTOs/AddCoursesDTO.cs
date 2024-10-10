@@ -29,7 +29,11 @@ namespace SkillUp.BussinessLayer.DTOs.CoursesDTOs
         [DisplayName("Image")]
         public string ImgUrl { get; set; }
 
-	}
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
+
+    }
 
     public static class AddcoursesDtoExtensions  //convert DTO into an entity model
 	{
@@ -42,7 +46,8 @@ namespace SkillUp.BussinessLayer.DTOs.CoursesDTOs
                 InstructorName = dto.InstructorName,
                 Price = dto.Price,
                 TotalHours = dto.TotalHours,
-                ImgUrl = dto.ImgUrl
+                ImgUrl = dto.ImgUrl,
+                PromotionalVideoUrl = dto.PromotionalVideoUrl
             };
         }
     }

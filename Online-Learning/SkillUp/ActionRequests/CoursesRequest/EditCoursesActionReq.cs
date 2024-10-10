@@ -26,9 +26,13 @@ namespace SkillUp.ActionRequests.CoursesRequest
 
         public IFormFile ImageFile { get; set; }
 
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
 
 
-		public static explicit operator EditCoursesDTO(EditCoursesActionReq actionReq)
+
+        public static explicit operator EditCoursesDTO(EditCoursesActionReq actionReq)
 		{
 			return new EditCoursesDTO
 			{
@@ -39,6 +43,7 @@ namespace SkillUp.ActionRequests.CoursesRequest
 				Price = actionReq.Price,
 				TotalHours = actionReq.TotalHours,
 				//ImgUrl = actionReq.ImgUrl,
+				PromotionalVideoUrl = actionReq.PromotionalVideoUrl,
 
 			};
 		}

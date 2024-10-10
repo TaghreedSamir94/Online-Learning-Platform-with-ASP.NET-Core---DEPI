@@ -29,7 +29,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Jeff Leek",
                       Price = 3980,
                       TotalHours = 29,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+                      PromotionalVideoUrl = "https://www.youtube.com/embed/lSwIe0TMUhc",
 				  },
 
                   new Courses
@@ -40,7 +41,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Bhrugen Patel",
                       Price = 1250,
                       TotalHours = 12,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+					  PromotionalVideoUrl = "https://www.youtube.com/embed/q9RdQa6pMx4",
 				  },
 
                   new Courses
@@ -51,7 +53,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Jo Hughes",
                       Price = 300,
                       TotalHours = 5,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+					  PromotionalVideoUrl = "https://www.youtube.com/embed/vCUGYAdvLIs",
 				  },
 
                   new Courses
@@ -62,7 +65,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Jonathan Peters",
                       Price = 800,
                       TotalHours = 8,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+					  PromotionalVideoUrl = "https://www.youtube.com/embed/8p3hZ2Yonsc?list=PLdW0onEGGcNlrod2I8eWGdqFk7GYya-sU",
 				  },
 
                   new Courses
@@ -73,7 +77,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Chris Haroun",
                       Price = 2600,
                       TotalHours = 25,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+					  PromotionalVideoUrl = "https://www.youtube.com/embed/GsQ2MiPZszw",
 				  },
 
                   new Courses
@@ -84,7 +89,8 @@ namespace SkillUp.DataAccessLayer.Data
                       InstructorName = "Miran Fattah",
                       Price = 1250,
                       TotalHours = 18,
-                      ImgUrl = "defaultImage.jpg"
+                      ImgUrl = "defaultImage.jpg",
+					  PromotionalVideoUrl = "https://www.youtube.com/embed/7P_LC_AX6sA",
 				  }
                 );
         }

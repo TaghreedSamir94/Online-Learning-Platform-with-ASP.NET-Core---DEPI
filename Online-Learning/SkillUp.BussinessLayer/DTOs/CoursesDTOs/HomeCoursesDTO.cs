@@ -29,5 +29,10 @@ namespace SkillUp.BussinessLayer.DTOs.CoursesDTOs
 
         [DisplayName("Image")]
         public string ImgUrl { get; set; }
-	}
+
+
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
+    }
 }

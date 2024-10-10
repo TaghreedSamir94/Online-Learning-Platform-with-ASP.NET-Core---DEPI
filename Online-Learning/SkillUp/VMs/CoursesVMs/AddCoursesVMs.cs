@@ -34,6 +34,10 @@ namespace SkillUp.VMs.CoursesVMs
 
 		public IFormFile ImageFile { get; set; }
 
+		[Required(ErrorMessage = "Image is required")]
+		[DisplayName("Promotion Video")]
+		public string PromotionalVideoUrl { get; set; }
+
 
 	}
 }
