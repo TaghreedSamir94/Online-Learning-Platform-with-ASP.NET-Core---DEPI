@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj": {}
+    "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj": {}
   },
   "projects": {
-    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
+    "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj",
         "projectName": "SkillUp.BussinessLayer",
-        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj",
-        "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
-                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj"
+              "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj"
               }
             }
           }
@@ -99,21 +103,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
+    "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj",
         "projectName": "SkillUp.DataAccessLayer",
-        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\SkillUp.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,9 +153,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
             "Microsoft.AspNet.Identity.EntityFramework": {
               "target": "Package",
               "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -198,21 +214,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj": {
+    "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj",
         "projectName": "SkillUp",
-        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj",
-        "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\obj\\",
+        "projectPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\SkillUp.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -227,8 +247,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
-                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj"
+              "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj": {
+                "projectPath": "C:\\Users\\hp\\source\\repos\\Online Courses GitHub\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUp.BussinessLayer\\SkillUp.BussinessLayer.csproj"
               }
             }
           }
@@ -248,9 +268,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -260,7 +288,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -292,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

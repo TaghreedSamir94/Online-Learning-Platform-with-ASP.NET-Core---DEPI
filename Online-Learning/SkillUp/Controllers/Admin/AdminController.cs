@@ -4,6 +4,7 @@ using SkillUp.DataAccessLayer.Entities;
 using SkillUp.VMs.User;
 using Microsoft.EntityFrameworkCore;
 using SkillUp.DataAccessLayer;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SkillUp.Controllers
 {
@@ -20,6 +21,44 @@ namespace SkillUp.Controllers
             _roleManager = roleManager;
             _userManager = userManager;
             _dbContext=dbContext;
+        }
+        [HttpGet]
+        public async Task<IActionResult> AssignUserRoles()
+        {
+            var  users =_userManager.Users.ToList();
+            var roles = _roleManager.Roles.ToList();
+            var model = new RolesVMs
+            {
+                Users =users.Select(u => new SelectListItem { Value =u.Id, Text =u.UserName }).ToList(),
+                Roles =roles.Select(u => new SelectListItem { Value =u.Id, Text =u.Name }).ToList(),
+
+            };
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AssignUserRoles(RolesVMs model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByIdAsync(model.UserId);
+                var role = await _roleManager.FindByIdAsync(model.RoleId);
+
+                if (user == null|| role == null)
+                {
+                    ModelState.AddModelError("Invalid data", "invalid User Or Role");
+                }
+                var result = await _userManager.AddToRoleAsync(user, role.Name);
+                if (result.Succeeded)
+                {
+                    TempData["SuccessMassage"]=" User Has been Successfully assigned to the role";
+                    return RedirectToAction(nameof(AssignUserRoles));
+                }
+                foreach(var error in result.Errors)
+                {
+                    ModelState.AddModelError(error.Code, error.Description);
+                }
+            }
+            return View(model);
         }
         [HttpGet]
         // show up all user

@@ -48,19 +48,27 @@ namespace SkillUp
              .AddCookie(options =>
              {
                  options.ExpireTimeSpan = TimeSpan.FromDays(30);//allow to time of log in 
-                 options.LoginPath = "Account/SignIn";
+                 options.LoginPath = "/Account/SignIn";
              });
 
-            builder.Services.AddIdentity<User, IdentityRole>()
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+                              {
+                                options.Password.RequireDigit= true;
+                               })
                             .AddEntityFrameworkStores<ApplicationDbContext>()// stores meaning repository
                             .AddDefaultTokenProviders();
 
+            //if user is not authenticated
+            builder.Services
+                .ConfigureApplicationCookie(options =>
+                {
+                    options.LoginPath="/Account/SignIn";
+                    //the user is not authrized to accces some resourcs 
+                    options.AccessDeniedPath ="/Account/AccessDenied";
+                }
+                );
+
             var app = builder.Build();
-            
-
-
-           
-
             
 
             // Configure the HTTP request pipeline.

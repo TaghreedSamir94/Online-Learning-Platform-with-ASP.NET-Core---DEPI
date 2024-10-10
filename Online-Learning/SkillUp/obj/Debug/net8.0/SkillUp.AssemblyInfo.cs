@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1c7e2c384fbc92c8df87ceae7674e6c4ec4a835")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af216fc319e4e4d56778552ada03c6e837f357bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

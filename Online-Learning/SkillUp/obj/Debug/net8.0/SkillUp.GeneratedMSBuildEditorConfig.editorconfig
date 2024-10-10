@@ -17,95 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SkillUp
 build_property.RootNamespace = SkillUp
-build_property.ProjectDir = D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\
+build_property.ProjectDir = C:\Users\hp\source\repos\Online Courses GitHub\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp
+build_property.MSBuildProjectDirectory = C:\Users\hp\source\repos\Online Courses GitHub\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/Register.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/SignIn.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/_ViewStart.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/AddCourses.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Admin/listUserRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cbGlzdFVzZXJSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Admin/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/AddCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xBZGRDb3Vyc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/CoursesList.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/CoursesList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDb3Vyc2VzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/Delete.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/EditCourses.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/EditCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0Q291cnNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/_ViewStart.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Courses/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/AllCourses.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/AllCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxDb3Vyc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/CourseDetails.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/CourseDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/HomeCoursesSection.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/HomeCoursesSection.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lQ291cnNlc1NlY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/Index.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/Privacy.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/Error.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Role/CreateRoleToUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGVSb2xlVG9Vc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Role/listRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxsaXN0Um9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutSignUpIn.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutSignUpIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTaWduVXBJbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutUsers.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_Notifications.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_Notifications.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewImports.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewStart.cshtml]
+[C:/Users/hp/source/repos/Online Courses GitHub/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

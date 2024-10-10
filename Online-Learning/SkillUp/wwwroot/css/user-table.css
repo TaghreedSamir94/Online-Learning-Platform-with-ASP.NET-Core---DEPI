@@ -1,0 +1,35 @@
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+    .user-table thead tr {
+        background-color: #4CAF50;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .user-table th, .user-table td {
+        padding: 12px 15px;
+    }
+
+    .user-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+        .user-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .user-table tbody tr:last-of-type {
+            border-bottom: 2px solid #4CAF50;
+        }
+
+        .user-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }

@@ -9,7 +9,7 @@
         <tr>
             <th>UserNmae</th>
             <th>Roles</th>
-            <th>Actions/th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -23,7 +23,7 @@
                     <form asp-action="EditUserRoles" method="post">
                         @*msh m7taga azhro id m7taga a3dlo bs *@
                         <input type="hidden" name="userId" value="@user.UserId" />
-                        <select name="roles"> 
+                        <select name="roles" multiple> 
                             @foreach(var role in (IList<string>) ViewBag.AllRoles)
                             {
                                 @*role m3ak wla la *@

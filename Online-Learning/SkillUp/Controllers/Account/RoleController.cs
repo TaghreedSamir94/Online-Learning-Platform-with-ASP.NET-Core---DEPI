@@ -22,10 +22,8 @@ namespace SkillUp.Controllers
             _context = context;
         }
 
-       
-
         [HttpPost] // Endpoint for role assignment
-        public async Task<IActionResult> AssignRoleToUser(AssignUserRoleActionRequset request)
+        public async Task<IActionResult> listRoles(listRolesActionRequset request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
 
@@ -57,18 +55,15 @@ namespace SkillUp.Controllers
             return BadRequest($"User is already in this role.{request.RoleName}"); // Handle case where user is already in the role
         }
         [HttpGet]
-        public async Task<IActionResult> AssignRoleToUser()
+        public async Task<IActionResult> listRoles()
         {
             // Use ToList() since Roles does not support asynchronous operations
             var roles = _roleManager.Roles.ToList();
             return View(roles);
         }
 
-
-
-
         [HttpPost]
-        public async Task<IActionResult> CreateRoleToUser(CreateRoleActionRequest request)
+        public async Task<IActionResult> CreateRole(CreateRoleActionRequest request)
         {
             if (ModelState.IsValid)
             {
@@ -80,23 +75,19 @@ namespace SkillUp.Controllers
                 //if u succeded
                 if (result.Succeeded)
                 {
-                    return RedirectToAction(nameof(AssignRoleToUser));
+                    return RedirectToAction(nameof(listRoles));
                 }
                 // show me errors and increase to role state 
-              
                 foreach(IdentityError error in result.Errors)
                 {
                         ModelState.AddModelError(error.Code, error.Description);
                 }
-               
             }
-
             return View(request);
-            
         }
 
         [HttpGet]
-        public async Task<IActionResult> CreateRoleToUser()
+        public async Task<IActionResult> CreateRole()
         {
             return View();
         }
