@@ -1,0 +1,24 @@
+﻿@using SkillUp.DataAccessLayer.Entities
+@model IEnumerable<User> 
+
+<h2>List Of Users</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.UserName</td>
+                <td>@role.Email</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

@@ -15,6 +15,8 @@ namespace SkillUp.ActionRequests.UserRequest
         [StringLength(100, ErrorMessage = "password must be at least {2} characters long", MinimumLength = 6)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public bool RememberMe { get; set; }
     }
     public static class SignInUserExtensions
     {

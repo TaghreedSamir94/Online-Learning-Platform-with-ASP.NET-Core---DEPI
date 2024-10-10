@@ -31,6 +31,7 @@ namespace SkillUp
             builder.Services.AddScoped<ICoursesService, CoursesService>();
             builder.Services.AddScoped<IUserService, UserService>();
 
+
             // Register DB
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -47,10 +48,10 @@ namespace SkillUp
              .AddCookie(options =>
              {
                  options.ExpireTimeSpan = TimeSpan.FromDays(30);//allow to time of log in 
-                 options.LoginPath = "/SignIn";
+                 options.LoginPath = "Account/SignIn";
              });
 
-            builder.Services.AddIdentity<User, Role>()
+            builder.Services.AddIdentity<User, IdentityRole>()
                             .AddEntityFrameworkStores<ApplicationDbContext>()// stores meaning repository
                             .AddDefaultTokenProviders();
 

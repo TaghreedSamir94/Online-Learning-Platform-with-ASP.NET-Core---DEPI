@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using SkillUp.ActionRequests.UserRequest;
+using SkillUp.ActionRequests.RoleRequest;
+using SkillUp.DataAccessLayer;
 using SkillUp.DataAccessLayer.Entities;
+using System.Data.Entity;
 
 
 namespace SkillUp.Controllers
@@ -10,73 +12,93 @@ namespace SkillUp.Controllers
     {
         // assign role
         private readonly UserManager<User> _userManager;
-        private readonly RoleManager<Role> _roleManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ApplicationDbContext _context;
 
-        public RoleController(UserManager<User> userManager, RoleManager<Role> roleManager)
+        public RoleController(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _context = context;
         }
-        [HttpPost("assign-role")] // endPoint
-        public async Task<IActionResult> AssignRoleToUser(AssignUserRoleActionRequset requset)
+
+       
+
+        [HttpPost] // Endpoint for role assignment
+        public async Task<IActionResult> AssignRoleToUser(AssignUserRoleActionRequset request)
         {
-            var user = await _userManager.FindByNameAsync(requset.UserName);
-            // if name is not found 
+            var user = await _userManager.FindByNameAsync(request.UserName);
+
+            // Check if the user was found
             if (user == null)
             {
-                return NotFound("User not Found");
+                return NotFound("User not found");
             }
 
-            // user take role or not 
-            var IsUserInRole = await _userManager.IsInRoleAsync(user, requset.RoleName);
+            // Check if the user is already in the specified role
+            var isUserInRole = await _userManager.IsInRoleAsync(user, request.RoleName);
 
-            // if role is not found in user 
-            if (!IsUserInRole)
+            if (!isUserInRole)
             {
-                var result = await _userManager.AddToRoleAsync(user, requset.RoleName);
+                var result = await _userManager.AddToRoleAsync(user, request.RoleName);
+
                 if (result.Succeeded)
                 {
-                    return Ok("User assigned to Role Successfully ");
+                    return Ok("User assigned to role successfully");
                 }
+
                 return BadRequest(new
                 {
-                    massage = "Failed to assign user to role",
+                    message = "Failed to assign user to role",
                     errors = result.Errors
                 });
-
             }
-            // if role is found 
-            return BadRequest($"User is already in role{requset.RoleName}");
+
+            return BadRequest($"User is already in this role.{request.RoleName}"); // Handle case where user is already in the role
         }
-        [HttpPost("Create-role")]
-        public async Task<IActionResult> CreateRoleToUser(CreateRoleActionRequest requset)
+        [HttpGet]
+        public async Task<IActionResult> AssignRoleToUser()
         {
-            //if string null , can anyone send null string  so... (white space strnig fadya )
+            // Use ToList() since Roles does not support asynchronous operations
+            var roles = _roleManager.Roles.ToList();
+            return View(roles);
+        }
 
-            if (string.IsNullOrWhiteSpace(requset.RoleName)) // validation step 
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateRoleToUser(CreateRoleActionRequest request)
+        {
+            if (ModelState.IsValid)
             {
-                return BadRequest("Role Name cannot be empty ");
+                IdentityRole role = new IdentityRole();
+                role.Name = request.RoleName;
+
+                //save 
+                IdentityResult result = await _roleManager.CreateAsync(role);
+                //if u succeded
+                if (result.Succeeded)
+                {
+                    return RedirectToAction(nameof(AssignRoleToUser));
+                }
+                // show me errors and increase to role state 
+              
+                foreach(IdentityError error in result.Errors)
+                {
+                        ModelState.AddModelError(error.Code, error.Description);
+                }
+               
             }
-            // if role in database or not  (لو انا بسال علي رول كدا محتاجه ال "roleManger")
-            var IsNotExists = await _roleManager.RoleExistsAsync(requset.RoleName);
-            if (!IsNotExists)
-            {
 
-                //createasync need to Identity role so i making a new object
-                //var result = await _roleManager.CreateAsync(new IdentityRole(requset.RoleName));
+            return View(request);
+            
+        }
 
-                //if (result.Succeeded)
-                //{
-                //    return Created();
-                //}
-                //return BadRequest(new
-                //{
-                //    massage = "Failed to Create a new Role",
-                //    errors = result.Errors
-                //});
-            }
-            return BadRequest("Role already exists.");
-
+        [HttpGet]
+        public async Task<IActionResult> CreateRoleToUser()
+        {
+            return View();
         }
     }
 }

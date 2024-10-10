@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -67,14 +69,20 @@
                 <a   asp-controller="Home" asp-action="GetAllCourses" class="nav-item nav-link">Courses</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <!----<div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                
-                </div>  --->
+                      </div>  --->
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <a  asp-controller="Account" asp-action="SignIn" class="nav-item nav-link"><i class="fa fa-user"></i></a>
-                <a href="#" class="nav-item nav-link">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a asp-controller="Account" asp-action="Logout" class="nav-item nav-link"><i class="fa fa-sign-out-alt"></i></a>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="SignIn" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+                }
 
-                    <!--<div id="google_translate_element"></div>-->
+                 <!--<div id="google_translate_element"></div>-->
 
 
                 </a>

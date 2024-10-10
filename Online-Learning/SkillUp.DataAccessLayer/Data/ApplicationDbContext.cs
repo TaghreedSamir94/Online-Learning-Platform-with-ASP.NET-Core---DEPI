@@ -15,7 +15,6 @@ namespace SkillUp.DataAccessLayer
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<Courses> Courses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

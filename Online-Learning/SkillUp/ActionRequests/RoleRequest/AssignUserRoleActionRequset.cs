@@ -1,4 +1,4 @@
-﻿namespace SkillUp.ActionRequests.UserRequest
+﻿namespace SkillUp.ActionRequests.RoleRequest
 {
     public class AssignUserRoleActionRequset
     {

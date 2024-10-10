@@ -46,6 +46,8 @@ namespace SkillUp.Controllers
                     {
                         return LocalRedirect(ReturnUrl);
                     }
+                    //create cookie 
+
                     // if pass is true then goto action sigin
                     return RedirectToAction("SignIn", "Account");
                 }
@@ -94,34 +96,43 @@ namespace SkillUp.Controllers
         [HttpPost]
         public async Task<IActionResult> SignIn(SignInActionRequest request, string ReturnUrl)
         {
-
             // found user name
             var user = await _UserManager.FindByNameAsync(request.UserName);
+            if (user != null)
+            {
+                //if pass is ture
+                var isPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
+                if (isPasswordValid)
+                {
+                    // return to url
+                    if (!string.IsNullOrEmpty(ReturnUrl))
+                    {
+                        return LocalRedirect(ReturnUrl);
+                    }
+                    //create a cookie
+                    await _signInManager.SignInAsync(user, request.RememberMe);
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            // pass is false
+            ModelState.AddModelError(string.Empty, "There is an issue with password Or UserName");
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, "There is an issue with UserName");
-                return View(request);
+                return RedirectToAction("Register", "Account"); 
             }
-
-            //if pass is ture
-            var isPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
-            if (isPasswordValid)
-            {
-                // return to url
-                if (!string.IsNullOrEmpty(ReturnUrl))
-                {
-                    return LocalRedirect(ReturnUrl);
-                }
-
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                // pass is false
-                ModelState.AddModelError(string.Empty, "There is an issue with password");
-                return View(request);
-            }
+            return View(request);
         }
+
+        [HttpGet]
+       
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction(nameof(SignIn));
+        }
+
+
     }
 }
+
 
