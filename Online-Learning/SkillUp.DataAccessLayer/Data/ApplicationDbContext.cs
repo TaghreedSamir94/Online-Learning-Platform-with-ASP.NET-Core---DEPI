@@ -3,6 +3,7 @@ using SkillUp.DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
+
 namespace SkillUp.DataAccessLayer.Data
 {
     public class ApplicationDbContext : IdentityDbContext<User>
@@ -25,6 +26,8 @@ namespace SkillUp.DataAccessLayer.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied
+
+            modelBuilder.Entity<EnrollmentC>().HasIndex(pt => new { pt.UserId, pt.CourseId }).IsUnique();
 
             modelBuilder.Entity<Courses>().HasData
                 (

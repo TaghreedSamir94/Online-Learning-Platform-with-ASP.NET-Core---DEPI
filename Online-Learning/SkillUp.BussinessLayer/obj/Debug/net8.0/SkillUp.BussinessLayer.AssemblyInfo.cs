@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillUp.BussinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b56b809ae5591a23742bc4619732ac49780ba2b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c3a06b67ddbd6f4b0cc367e6513aabf6f4f32ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillUp.BussinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillUp.BussinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

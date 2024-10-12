@@ -14,13 +14,14 @@ namespace SkillUp.DataAccessLayer.Entities
 
         public DateTime DateAdded { get; set; }
 
-        public CompletionStatus CompletionStatus { get; set; } = CompletionStatus.NotStarted;
+        public CompletionStatus CompletionStatus { get; set; } = CompletionStatus.InProgress;
         [ForeignKey(nameof(Courses))]
         public int CourseId { get; set; }
 
         public Courses Course { get; set; }
 
-
+        [ForeignKey(nameof(User))]
+        public int UserId { get; set; }
         public User User { get; set; }
     }
 

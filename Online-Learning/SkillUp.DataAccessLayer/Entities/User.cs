@@ -11,6 +11,6 @@ namespace SkillUp.DataAccessLayer.Entities
         // Properties
         public string TypeOfUser { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;
-
+        public ICollection<EnrollmentC> Enrollments { get; set; }
     }
 }

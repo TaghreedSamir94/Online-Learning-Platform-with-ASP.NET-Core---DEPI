@@ -8,9 +8,9 @@ namespace SkillUp.DataAccessLayer.Enums
 {
     public enum CompletionStatus
     {
-        NotStarted,
-        InProgress,
-        Completed,
-        Failed
+        
+        InProgress=1,
+        Completed=2,
+        Failed=3
     }
 }
