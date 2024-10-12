@@ -31,11 +31,6 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
-
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -52,10 +47,6 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasDiscriminator().HasValue("IdentityRole");
-
-                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -271,7 +262,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                         });
                 });
 
-            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.User", b =>
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -292,6 +283,9 @@ namespace SkillUp.DataAccessLayer.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -322,10 +316,6 @@ namespace SkillUp.DataAccessLayer.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<string>("TypeOfUser")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -341,13 +331,97 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.UseTptMappingStrategy();
                 });
 
-            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Role", b =>
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Admin", b =>
                 {
-                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser");
 
-                    b.HasDiscriminator().HasValue("Role");
+                    b.Property<string>("Department")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Admins", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "62135f4d-7d5b-4ba6-abf0-a15645f82960",
+                            DateCreated = new DateTime(2024, 10, 12, 0, 58, 14, 650, DateTimeKind.Local).AddTicks(588),
+                            Email = "adminHarry@test.com",
+                            EmailConfirmed = true,
+                            Gender = 0,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "c368a039-09c3-4991-b25b-3458a9db4759",
+                            TwoFactorEnabled = false,
+                            UserName = "Harry",
+                            Department = "Administrator"
+                        });
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Instructor", b =>
+                {
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Education")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Instructors", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "3",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "6f146fad-eecd-4888-b4c4-4f933fe678da",
+                            DateCreated = new DateTime(2024, 10, 12, 0, 58, 14, 650, DateTimeKind.Local).AddTicks(558),
+                            Email = "instructor@test.com",
+                            EmailConfirmed = true,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b202b87c-5e54-4b5d-b8e0-269ca9f27bfc",
+                            TwoFactorEnabled = false,
+                            UserName = "Hermoine",
+                            Description = "Expert in .NET",
+                            Education = "PhD in Computer Science"
+                        });
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Student", b =>
+                {
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser");
+
+                    b.Property<string>("University")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Students", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "9da37fda-d926-4a7d-baaa-e406fa33069f",
+                            DateCreated = new DateTime(2024, 10, 12, 0, 58, 14, 650, DateTimeKind.Local).AddTicks(350),
+                            Email = "student@test.com",
+                            EmailConfirmed = true,
+                            Gender = 0,
+                            LockoutEnabled = false,
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "17ec9199-1680-4c4e-9f89-857601047ba3",
+                            TwoFactorEnabled = false,
+                            UserName = "Ron",
+                            University = "Hogwarts Universty"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -361,7 +435,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -370,7 +444,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -385,7 +459,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -394,9 +468,36 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Admin", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.UserEntities.Admin", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Instructor", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.UserEntities.Instructor", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.UserEntities.Student", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.UserEntities.GeneralUser", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.UserEntities.Student", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

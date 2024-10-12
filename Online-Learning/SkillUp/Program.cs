@@ -5,6 +5,7 @@ using SkillUp.BussinessLayer.Services;
 using SkillUp.BussinessLayer.Services.Users;
 using SkillUp.DataAccessLayer.Data;
 using SkillUp.DataAccessLayer.Entities;
+using SkillUp.DataAccessLayer.Entities.UserEntities;
 using SkillUp.DataAccessLayer.Repositories;
 using SkillUp.DataAccessLayer.Repositories.GenericRepositories;
 using SkillUp.DataAccessLayer.Repositories.UserRepo;
@@ -39,9 +40,18 @@ namespace SkillUp
                             options.LoginPath = "/SignIn";
                         });
 
-            builder.Services.AddIdentity<User, Role>()
-                                       .AddEntityFrameworkStores<ApplicationDbContext>()// stores meaning repository
-                                       .AddDefaultTokenProviders();
+
+            builder.Services.AddIdentity<GeneralUser, IdentityRole>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequiredLength = 6;
+                options.SignIn.RequireConfirmedAccount = true;
+            })
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             var app = builder.Build();
 
@@ -56,9 +66,10 @@ namespace SkillUp
             app.UseRouting();
 
             app.UseHttpsRedirection();
-            // fill httpContext .user with its value
-            app.UseAuthentication(); // who are you 
-            app.UseAuthorization();  //allow to do samething 
+
+            // Use authentication and authorization
+            app.UseAuthentication(); 
+            app.UseAuthorization();  
 
 
 

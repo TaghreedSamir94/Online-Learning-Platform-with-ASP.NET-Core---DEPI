@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace SkillUp.DataAccessLayer.Enums
 {
-   
-        [Flags]
-        public enum Types
-        {
-            PostCategories,
-            PostTags,
-        }
-    
+    public enum RoleEnum
+    {
+        Student,
+        Instructor,
+        Admin
+    }
 }

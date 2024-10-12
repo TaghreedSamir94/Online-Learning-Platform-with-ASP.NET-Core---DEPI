@@ -2,23 +2,62 @@
 using SkillUp.DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using SkillUp.DataAccessLayer.Entities.UserEntities;
+using System.Reflection;
+using SkillUp.DataAccessLayer.Enums;
 
 namespace SkillUp.DataAccessLayer.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<GeneralUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<Courses> Courses { get; set; }
+
        
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Courses> Courses { get; set; }
+
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // Check if options have already been configured
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("YourConnectionString")
+                              .EnableSensitiveDataLogging();
+            }
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied
 
+            // TPT Configuration
+            //modelBuilder.Entity<GeneralUser>().ToTable("Users");
+            modelBuilder.Entity<Student>().ToTable("Students");
+            modelBuilder.Entity<Instructor>().ToTable("Instructors");
+            modelBuilder.Entity<Admin>().ToTable("Admins");
+
+            // Seed Student
+            modelBuilder.Entity<Student>().HasData(
+                new Student { Id = "2", UserName = "Ron", Email = "student@test.com", EmailConfirmed = true, DateCreated = DateTime.Now, Gender = GenderEnum.Male, University = "Hogwarts Universty"} 
+            );
+
+            // Seed Instructor
+            modelBuilder.Entity<Instructor>().HasData(
+                new Instructor { Id = "3", UserName = "Hermoine", Email = "instructor@test.com", EmailConfirmed = true, DateCreated = DateTime.Now, Gender = GenderEnum.Female, Education = "PhD in Computer Science", Description = "Expert in .NET" }
+            );
+
+            // Seed Admin
+            modelBuilder.Entity<Admin>().HasData(
+                new Admin { Id = "1", UserName = "Harry", Email = "adminHarry@test.com", EmailConfirmed = true, DateCreated = DateTime.Now, Gender = GenderEnum.Male, Department = "Administrator"}
+            );
+
+            // Seed Courses
             modelBuilder.Entity<Courses>().HasData
                 (
                   new Courses

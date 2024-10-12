@@ -55,7 +55,6 @@ D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEP
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Text.Json.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\af\Humanizer.resources.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\ar\Humanizer.resources.dll
@@ -264,3 +263,6 @@ D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEP
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\EntityFramework.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\bin\Debug\net8.0\System.Formats.Asn1.dll

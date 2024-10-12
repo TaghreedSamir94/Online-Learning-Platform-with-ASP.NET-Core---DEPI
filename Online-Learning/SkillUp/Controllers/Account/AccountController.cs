@@ -2,114 +2,123 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SkillUp.ActionRequests.UserRequest;
-using SkillUp.DataAccessLayer.Entities;
+using SkillUp.BussinessLayer.DTOs.UsersDTOs;
+using SkillUp.BussinessLayer.Services.Users;
+using SkillUp.DataAccessLayer.Entities.UserEntities;
+using SkillUp.VMs.AccountVMs;
 
 namespace SkillUp.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _UserManager; //to allow me to read from app setting 
+        private readonly IUserService _userService;
+        private readonly SignInManager<GeneralUser> _signInManager;
 
-
-        public AccountController(SignInManager<User> signInManager, UserManager<User> userManager)
+        public AccountController(IUserService userService, SignInManager<GeneralUser> signInManager)
         {
+            _userService = userService;
             _signInManager = signInManager;
-            _UserManager = userManager;
-
         }
 
 
-        //Register Create a new Student or Instructor 
+        #region Registration for Student
+        public IActionResult RegisterStudent()
+        {
+            return View("StudentRegister");
+        }
 
         [HttpPost]
-        public async Task<IActionResult> Register(CreateUserActionRequest Request, string ReturnUrl)
+        public async Task<IActionResult> RegisterStudent(RegisteredStudentVM registerStudentVM)
         {
-            var existingUser = await _UserManager.FindByNameAsync(Request.UserName);
-
-            if (existingUser != null)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError(string.Empty, "you are already Registered");
-                return View(Request);
+                return View(registerStudentVM);
             }
+            var request = (RegisteredStudentActionReq)registerStudentVM;
 
-            var user = new User
+            RegisteredStudentDTO? dto = request.ToDTO();
+
+            var result = await _userService.RegisterStudentAsync(dto);
+            if (result.IsSuccess)
             {
-                UserName = Request.UserName,
-                Email = Request.Email,
-                TypeOfUser = Request.TypeOfUser
-            };
-
-            if (existingUser != null)
-            {
-                // if user is registered then check pass
-                var passwordValid = await _UserManager.CheckPasswordAsync(existingUser, Request.Password);
-
-                if (passwordValid)
-                {
-                    if (!string.IsNullOrEmpty(ReturnUrl) && Url.IsLocalUrl(ReturnUrl))
-                    {
-                        return LocalRedirect(ReturnUrl);
-                    }
-                    // if pass is true then goto action sigin
-                    return RedirectToAction("SignIn", "Account");
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "There is an issue with password ");
-                }
+                return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                // user cannot find ...
-                IdentityResult result = await _UserManager.CreateAsync(user, Request.Password);
+            // Print errors to console (or log them)
+            Console.WriteLine(result.ErrorMessage);
 
-                if (result.Succeeded)
-                {
-                    //await _signInManager.SignInAsync(user, isPersistent: true);
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    // any error show up 
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                    }
-                }
-            }
+            ModelState.AddModelError(string.Empty, result.ErrorMessage);
 
-            // if no action is ture show the reason
-            return View(Request);
+            return View(registerStudentVM);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Register()
-        {
-            return View();
-        }
+        #endregion
 
 
-        [HttpGet("SignIn")]
-        public async Task<IActionResult> SignIn()
+        #region Registration for Instructors
+
+        public IActionResult RegisterInstructor()
         {
-            return View();
+            return View("InstructorRegister");
         }
-        // log in user 
-        [HttpPost("SignIn")]
-        public async Task<IActionResult> SignIn(SignInActionRequest request)
+
+        [HttpPost]
+        public async Task<IActionResult> RegisterInstructor(RegisteredInstructorVM registerInstructorVM)
         {
-            var user = await _UserManager.FindByNameAsync(request.UserName);
-            if (user != null)
+            if (!ModelState.IsValid)
             {
-                var IsPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
-                if (IsPasswordValid)
-                {
-                    return Unauthorized(); //401 erorr
-                }
+                return View(registerInstructorVM);
             }
-            return RedirectToAction("Account", "Register");
+
+            var req = (RegisteredInstructorActionReq)registerInstructorVM;
+
+            RegisteredInstructorDTO dto = (RegisteredInstructorDTO)req;
+
+            var result = await _userService.RegisterInstructorAsync(dto);
+
+            if (result.IsSuccess)
+            {
+                return RedirectToAction("InstructorPage","Shared");
+            }
+
+            ModelState.AddModelError(string.Empty, result.ErrorMessage);
+            return View(registerInstructorVM);
         }
+        #endregion
+
+
+        #region Registration for Admins
+
+        public IActionResult RegisterAdmin()
+        {
+            return View("AdminrRegister");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RegisterAdmin(RegisteredAdminVM registerAdminVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(registerAdminVM);
+            }
+
+            var req = (RegisteredAdminActionReq)registerAdminVM;
+
+            RegisteredAdminDTO dto = (RegisteredAdminDTO)req;
+
+            var result = await _userService.RegisterAdminAsync(dto);
+
+            if (result.IsSuccess)
+            {
+                return RedirectToAction("Index", "Courses");
+            }
+
+            ModelState.AddModelError(string.Empty, result.ErrorMessage);
+            return View(registerAdminVM);
+        }
+        #endregion
+
+
+
     }
 }
 

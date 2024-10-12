@@ -1,33 +1,69 @@
 ﻿using SkillUp.BussinessLayer.DTOs.UsersDTOs;
-using SkillUp.DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Identity;
+using SkillUp.DataAccessLayer.Entities.UserEntities;
 
 namespace SkillUp.BussinessLayer.Services.Users
 {
     public class UserService : IUserService
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly UserManager<GeneralUser> _userManager;
+        private readonly SignInManager<GeneralUser> _signInManager;
         
 
-        public UserService(UserManager<User> userManager, SignInManager<User> signinManger)
+        public UserService(UserManager<GeneralUser> userManager, SignInManager<GeneralUser> signinManger)
         {
             _userManager = userManager;
             _signInManager = signinManger;
         }
-        public async Task<IdentityResult> RegisterUser(UserDTO user)
-        {
-            // identityresult msh bt3aml hasshing password
-            // convert dto to identity
-            IdentityResult result = await _userManager.CreateAsync(user.ToUser());
 
-            return result;
+        public async Task<SignInResult> LoginAsync(LoginDTO loginDto)
+        {
+            var user = await _userManager.FindByEmailAsync(loginDto.Email);
+            if (user == null)
+            {
+                return SignInResult.Failed; // User not fond
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, loginDto.Password, loginDto.RememberMe, lockoutOnFailure: false);
+            return result; 
         }
 
-        public async Task SignIn(UserDTO user)
+        public async Task LogoutAsync()
         {
-            //persist cookies ana b7dd liha time bt3ha /session cookies time bt3ha 3la omr al session lifetime
-            await _signInManager.SignInAsync(user.ToUser(), true);
+            await _signInManager.SignOutAsync();
+        }
+
+        public async Task<ResultDTO> RegisterAdminAsync(RegisteredAdminDTO adminDto)
+        {
+            var admin = adminDto.ToEntity(); //  extension method to map DTO to entity
+            var result = await _userManager.CreateAsync(admin, adminDto.Password);
+            return new ResultDTO
+            {
+                IsSuccess = result.Succeeded,
+                ErrorMessage = result.Succeeded ? string.Empty : string.Join(", ", result.Errors.Select(e => e.Description))
+            };
+        }
+
+        public async Task<ResultDTO> RegisterInstructorAsync(RegisteredInstructorDTO instructorDto)
+        {
+            var instructor = instructorDto.ToEntity(); //  extension method to map DTO to entity
+            var result =  await _userManager.CreateAsync(instructor, instructorDto.Password);
+            return new ResultDTO
+            {
+                IsSuccess = result.Succeeded,
+                ErrorMessage = result.Succeeded ? string.Empty : string.Join(", ", result.Errors.Select(e => e.Description))
+            };
+        }
+
+        public async Task<ResultDTO> RegisterStudentAsync(RegisteredStudentDTO studentDto)
+        {
+            var student = studentDto.ToEntity(); //  extension method to map DTO to entity
+            var result = await _userManager.CreateAsync(student, studentDto.Password);
+            return new ResultDTO
+            {
+                IsSuccess = result.Succeeded,
+                ErrorMessage = result.Succeeded ? string.Empty : string.Join(", ", result.Errors.Select(e => e.Description))
+            };
         }
     }
 }
