@@ -5,22 +5,22 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SkillUp.DataAccessLayer.Data;
+using SkillUp.DataAccessLayer;
 
 #nullable disable
 
 namespace SkillUp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241004202704_UserTable")]
-    partial class UserTable
+    [Migration("20241012123830_RoleMigration")]
+    partial class RoleMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "8.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -325,6 +325,41 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.UseTptMappingStrategy();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Admin", b =>
+                {
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+
+                    b.Property<string>("AdminCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Admins");
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Instructor", b =>
+                {
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+
+                    b.Property<string>("Deepartment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Instructors");
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Student", b =>
+                {
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+
+                    b.Property<string>("Major")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -374,6 +409,33 @@ namespace SkillUp.DataAccessLayer.Migrations
                     b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Admin", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.Admin", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Instructor", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.Instructor", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Student", b =>
+                {
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                        .WithOne()
+                        .HasForeignKey("SkillUp.DataAccessLayer.Entities.Student", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

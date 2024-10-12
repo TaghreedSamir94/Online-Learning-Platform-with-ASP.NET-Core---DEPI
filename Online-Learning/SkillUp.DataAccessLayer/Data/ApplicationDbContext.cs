@@ -5,18 +5,21 @@ using System.Reflection.Emit;
 using Azure;
 using SkillUp.DataAccessLayer.Entities;
 
+
 namespace SkillUp.DataAccessLayer
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
         }
-
         public DbSet<User> Users { get; set; }
         public DbSet<Courses> Courses { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Student> Students { get; set; }
 
+    
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied

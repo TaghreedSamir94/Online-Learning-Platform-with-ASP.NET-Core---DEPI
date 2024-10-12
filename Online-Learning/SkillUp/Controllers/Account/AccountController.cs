@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SkillUp.ActionRequests.UserRequest;
 using SkillUp.DataAccessLayer.Entities;
@@ -55,6 +56,7 @@ namespace SkillUp.Controllers
                 {
                     ModelState.AddModelError(string.Empty, "There is an issue with password ");
                 }
+                return View(Request);
             }
             else
             {
@@ -63,7 +65,17 @@ namespace SkillUp.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: true);
+                    var roleResult = await _UserManager.AddToRoleAsync(user, Request.TypeOfUser);
+
+                    if (!roleResult.Succeeded)
+                    {
+                        foreach (var error in roleResult.Errors)
+                        {
+                            ModelState.AddModelError(string.Empty, error.Description);
+                        }
+                        return View(Request);
+                    }
+
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -72,67 +84,71 @@ namespace SkillUp.Controllers
                     foreach (var error in result.Errors)
                     {
                         ModelState.AddModelError(string.Empty, error.Description);
+
                     }
                 }
+                // if no action is ture show the reason
+                return View(Request);
+            }
+        }
+
+            [HttpGet]
+            public async Task<IActionResult> Register()
+            {
+                return View();
             }
 
-            // if no action is ture show the reason
-            return View(Request);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Register()
-        {
-            return View();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> SignIn()
-        {
-            return View();
-        }
-
-        // log in user 
-        [HttpPost]
-        public async Task<IActionResult> SignIn(SignInActionRequest request, string ReturnUrl)
-        {
-            // found user name
-            var user = await _UserManager.FindByNameAsync(request.UserName);
-            if (user != null)
+            [HttpGet]
+            public async Task<IActionResult> SignIn()
             {
-                //if pass is ture
-                var isPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
-                if (isPasswordValid)
+                return View();
+            }
+
+            // log in user 
+            [HttpPost]
+            public async Task<IActionResult> SignIn(SignInActionRequest request, string ReturnUrl)
+            {
+                // found user name
+                var user = await _UserManager.FindByNameAsync(request.UserName);
+                if (user != null)
                 {
-                    // return to url
-                    if (!string.IsNullOrEmpty(ReturnUrl))
+                    //if pass is ture
+                    var isPasswordValid = await _UserManager.CheckPasswordAsync(user, request.Password);
+                    if (isPasswordValid)
                     {
-                        return LocalRedirect(ReturnUrl);
-                    }
-                    //create a cookie
-                    await _signInManager.SignInAsync(user, request.RememberMe);
-                    return RedirectToAction("Index", "Home");
-                }
-            }
-            // pass is false
-            ModelState.AddModelError(string.Empty, "There is an issue with password Or UserName");
-            if (user == null)
-            {
-                return RedirectToAction("Register", "Account"); 
-            }
-            return View(request);
-        }
+                        //role 
+                        var roles = await _UserManager.GetRolesAsync(user);
+                        string userRole = roles.FirstOrDefault();
+                        TempData["UserRole"] = userRole;
 
-        [HttpGet]
-       
-        public async Task<IActionResult> Logout()
-        {
-            await _signInManager.SignOutAsync();
-            return RedirectToAction(nameof(SignIn));
-        }
+                        // return to url
+                        if (!string.IsNullOrEmpty(ReturnUrl))
+                        {
+                            return LocalRedirect(ReturnUrl);
+                        }
+                        //create a cookie
+                        await _signInManager.SignInAsync(user, request.RememberMe);
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                // pass is false
+                ModelState.AddModelError(string.Empty, "There is an issue with password Or UserName");
+                if (user == null)
+                {
+                    return RedirectToAction("Register", "Account");
+                }
+                return View(request);
+            }
+
+            [HttpGet]
+
+            public async Task<IActionResult> Logout()
+            {
+                await _signInManager.SignOutAsync();
+                return RedirectToAction(nameof(SignIn));
+            }
 
 
     }
-}
-
+} 
 

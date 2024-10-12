@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace SkillUp.DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class UserTable : Migration
+    public partial class fixMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -50,6 +52,24 @@ namespace SkillUp.DataAccessLayer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Courses",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    InstructorName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Price = table.Column<float>(type: "real", nullable: false),
+                    TotalHours = table.Column<float>(type: "real", nullable: false),
+                    ImgUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Courses", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -158,6 +178,19 @@ namespace SkillUp.DataAccessLayer.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Courses",
+                columns: new[] { "ID", "Description", "ImgUrl", "InstructorName", "Price", "Title", "TotalHours" },
+                values: new object[,]
+                {
+                    { 1, "This course is part of the Executive Data Science Specialization ,When you enroll in this course, you'll also be enrolled in this Specialization.1-Learn new concepts from industry experts 2-Gain a foundational understanding of a subject or tool 4-Develop job-relevant skills with hands-on projects 5-Earn a shareable career certificate", "defaultImage.jpg", "Jeff Leek", 3980f, "A Crash Course in Data Science", 29f },
+                    { 2, "Blazor is an exciting new part of .NET Core (.NET 9) designed for building rich web user interfaces in C#. This course will help developers transition from building basic sample apps to implementing more real world concepts, design patterns, and features.", "defaultImage.jpg", "Bhrugen Patel", 1250f, "Blazor - The Complete Guide [.NET 9] [2024] [E-commerce]", 12f },
+                    { 3, "Learn how to use Adobe Illustrator to draw fashion flats. Develop your skills to enable you to produce creative, accurate product designs quickly and to standards required for retail and manufacturing.", "defaultImage.jpg", "Jo Hughes", 300f, "Learn to draw fashion with Adobe Illustrator CC - Beginners", 5f },
+                    { 4, "", "defaultImage.jpg", "Jonathan Peters", 800f, "Music Theory", 8f },
+                    { 5, "This course will help you understand accounting, finance, financial modeling and valuation from scratch (no prior accounting, finance, modeling or valuation experience is required).\r\n\r\nBy the end of this course, you will also know how to value companies using several different valuation methodologies that I have used during my Wall Street career so you can come up with target prices for the companies that you are analyzing.", "defaultImage.jpg", "Chris Haroun", 2600f, "Introduction to Finance, Accounting, Modeling and Valuation", 25f },
+                    { 6, "Discrete Mathematics (DM), or Discrete Math is the backbone of Mathematics and Computer Science. DM is the study of topics that are discrete rather than continuous, for that, the course is a MUST for any Math or CS student. The topics that are covered in this course are the most essential ones, those that will touch every Math and Science student at some point in their education. ", "defaultImage.jpg", "Miran Fattah", 1250f, "Discrete Mathematics", 18f }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -215,6 +248,9 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Courses");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
