@@ -13,6 +13,7 @@ namespace SkillUp.DataAccessLayer.Entities
         public int Id { get; set; }
 
         public DateTime DateAdded { get; set; }
+        public int CompletedLessons { get; set; } = 0;
 
         public CompletionStatus CompletionStatus { get; set; } = CompletionStatus.InProgress;
         [ForeignKey(nameof(Courses))]

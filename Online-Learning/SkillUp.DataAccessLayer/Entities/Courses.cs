@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkillUp.DataAccessLayer.Repositories.Enrollment;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -35,6 +36,7 @@ namespace SkillUp.DataAccessLayer.Entities
         public string ImgUrl { get; set; } = "defaultImage.jpg";
 
         public ICollection<EnrollmentC> Enrollments { get; set; }
+        public ICollection<UserCourseProgress> UserCourseProgresses { get; set; }
 
-	}
+    }
 }

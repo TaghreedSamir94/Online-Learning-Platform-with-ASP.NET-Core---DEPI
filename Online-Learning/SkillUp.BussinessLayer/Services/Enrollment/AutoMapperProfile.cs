@@ -17,6 +17,7 @@ namespace SkillUp.BussinessLayer.Services.Enrollment
         {
 
             CreateMap<GetEnrollmentDTO, EnrollmentC>().ReverseMap();
+            CreateMap<ProgressDTO, Progress>().ReverseMap();
         }
     }
 }

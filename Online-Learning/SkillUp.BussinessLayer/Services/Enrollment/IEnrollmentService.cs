@@ -21,5 +21,7 @@ namespace SkillUp.BussinessLayer.Services.Enrollment
         public Task<ResultView<List<GetEnrollmentDTO>>> GetAllAsync();
 
         public Task SaveChangesAsync();
+
+
     }
 }
