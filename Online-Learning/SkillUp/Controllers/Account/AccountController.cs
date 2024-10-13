@@ -77,7 +77,7 @@ namespace SkillUp.Controllers
 
             if (result.IsSuccess)
             {
-                return RedirectToAction("InstructorPage","Shared");
+                return View("InstructorHomePage");
             }
 
             ModelState.AddModelError(string.Empty, result.ErrorMessage);

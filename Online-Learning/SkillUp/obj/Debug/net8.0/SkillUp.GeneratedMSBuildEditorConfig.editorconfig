@@ -30,12 +30,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbnJSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/InstructorRegister.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN0cnVjdG9yUmVnaXN0ZXIuY3NodG1s
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/InstructorHomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN0cnVjdG9ySG9tZVBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/SignIn.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
+[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/InstructorRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN0cnVjdG9yUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Account/StudentRegister.cshtml]
@@ -88,10 +88,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/InstructorPage.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluc3RydWN0b3JQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_LayoutAdmin.cshtml]
