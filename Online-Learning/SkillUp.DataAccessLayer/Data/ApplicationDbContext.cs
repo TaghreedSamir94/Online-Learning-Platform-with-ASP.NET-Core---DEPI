@@ -23,6 +23,8 @@ namespace SkillUp.DataAccessLayer.Data
 
         public DbSet<EnrollmentC> Enrollments { get; set; }
 
+        public DbSet<Progress> Progresses { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied

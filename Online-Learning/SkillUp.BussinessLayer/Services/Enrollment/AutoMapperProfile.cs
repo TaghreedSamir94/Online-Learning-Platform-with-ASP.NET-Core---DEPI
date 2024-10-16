@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SkillUp.BussinessLayer.DTOs.EnrollmentDTOs;
+using SkillUp.BussinessLayer.DTOs.Progress;
 using SkillUp.DataAccessLayer.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace SkillUp.BussinessLayer.Services.Enrollment
         {
 
             CreateMap<GetEnrollmentDTO, EnrollmentC>().ReverseMap();
-            CreateMap<ProgressDTO, Progress>().ReverseMap();
+            CreateMap<ProgressDTO, DataAccessLayer.Entities.Progress>().ReverseMap();
         }
     }
 }

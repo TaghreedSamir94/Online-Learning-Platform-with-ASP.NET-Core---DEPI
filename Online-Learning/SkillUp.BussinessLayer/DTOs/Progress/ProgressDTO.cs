@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkillUp.BussinessLayer.DTOs.EnrollmentDTOs
+namespace SkillUp.BussinessLayer.DTOs.Progress
 {
     public class ProgressDTO
     {
-        public int UserId { get; set; }
+        public int ProgressId { get; set; }
         public int CourseId { get; set; }
-        public int CompletedModules { get; set; }
+        public int UserId { get; set; }
+        public int CompletionPercentage { get; set; }
         public DateTime LastUpdated { get; set; }
     }
 }

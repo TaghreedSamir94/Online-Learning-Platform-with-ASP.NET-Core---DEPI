@@ -10,7 +10,7 @@ namespace SkillUp.DataAccessLayer.Entities
     public class Progress
     {
         public int ProgressId { get; set; }
-        public int CompletedModules { get; set; }
+        public int CompletionPercentage { get; set; }
         public DateTime LastUpdated { get; set; }
         [ForeignKey(nameof(User))]
         public int UserId { get; set; }
