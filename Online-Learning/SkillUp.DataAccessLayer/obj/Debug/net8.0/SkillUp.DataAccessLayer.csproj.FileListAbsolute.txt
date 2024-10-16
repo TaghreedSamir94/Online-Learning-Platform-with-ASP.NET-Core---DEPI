@@ -1,15 +1,12 @@
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\bin\Debug\net8.0\SkillUp.DataAccessLayer.deps.json
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\bin\Debug\net8.0\SkillUp.DataAccessLayer.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\bin\Debug\net8.0\SkillUp.DataAccessLayer.pdb
-D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\bin\Debug\net8.0\SkillUp.BussinessLayer.dll
-D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\bin\Debug\net8.0\SkillUp.BussinessLayer.pdb
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.csproj.AssemblyReference.cache
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.AssemblyInfoInputs.cache
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.AssemblyInfo.cs
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.csproj.CoreCompileInputs.cache
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.sourcelink.json
-D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp..73797DD9.Up2Date
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\refint\SkillUp.DataAccessLayer.dll
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.DataAccessLayer\obj\Debug\net8.0\SkillUp.DataAccessLayer.pdb

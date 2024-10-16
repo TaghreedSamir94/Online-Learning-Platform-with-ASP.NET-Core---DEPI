@@ -13,3 +13,6 @@ D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEP
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\bin\Debug\net8.0\SkillUp.BussinessLayer.runtimeconfig.json
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\obj\Debug\net8.0\SkillUp.BussinessLayer.csproj.AssemblyReference.cache
 D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\obj\Debug\net8.0\SkillUp.BussinessLayer.genruntimeconfig.cache
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\bin\Debug\net8.0\SkillUp.DataAccessLayer.dll
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\bin\Debug\net8.0\SkillUp.DataAccessLayer.pdb
+D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp.BussinessLayer\obj\Debug\net8.0\SkillUp..8402FFBF.Up2Date

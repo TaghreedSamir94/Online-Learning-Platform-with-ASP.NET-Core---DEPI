@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!---<link rel="icon" type="image/png" href="~/SignAssets/images/logo-16x16.png" />-->
+    <link href="~/UserAssets/css/bootstrap.min.css" rel="stylesheet">
+    <title>@ViewBag.Title -Register</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/SignAssets/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/SignAssets/css/style.css">
+
+    <!-- Tiny McE -->
+
+    <script src="https://cdn.tiny.cloud/1/0ydt3mlxx9vro0nv94nqxopzw5mu9sp6l13sq4juu7thd3o1/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#tiny',
+            plugins: [
+                'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'markdown',
+                'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+                'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+            ],
+            toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify |' +
+                'bullist numlist checklist outdent indent | removeformat | code table help'
+        })
+    </script>
+
+</head>
+<body>
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <!-- JS -->
+    <script src="~/SignAssets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/SignAssets/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
