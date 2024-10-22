@@ -8,8 +8,12 @@ using System.Threading.Tasks;
 namespace SkillUp.DataAccessLayer.Entities
 {
     [Table("Students")]
-    public class Student:User
+    public class Student:GeneralUser
     {
-        public string Major { get; set; }
+        public string? University { get; set; }
+        public override string ToString()
+        {
+            return $"admin{UserName} => University ={University}";
+        }
     }
 }

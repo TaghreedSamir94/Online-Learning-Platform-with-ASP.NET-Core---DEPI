@@ -1,0 +1,13 @@
+﻿@model IList<string>
+@{
+    ViewData["Title"] = " User Roles";
+}
+<h2> Roles for User :@ViewBag.UserEmail</h2>
+
+<ul>
+    @foreach (var role in Model)
+    {
+        <li>@role</li>
+    }
+</ul>
+<a href="@Url.Action("AssignRoleToUser","Role")" class="btn btn-primary">Assign new Roles</a>

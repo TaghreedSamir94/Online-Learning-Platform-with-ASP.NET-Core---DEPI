@@ -1,5 +1,5 @@
-﻿@using SkillUp.ActionRequests.UserRequest
-@model CreateUserActionRequest
+﻿@* @using SkillUp.ActionRequests.UserRequest
+@model RegisteredAdminActionReq
 
 
 @{
@@ -35,20 +35,7 @@
                             <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                             @Html.PasswordFor(m => m.ConfirmPassword, new { placeholder = "repeat your password", @class = "form-control" })
                         </div>
-                        <div class="form-group">
-                            <div type="radio" name="agree-term" id="agree-term" class="agree-term" value="option2">
-                                <span asp-validation-for="TypeOfUser" class="text-danger"></span>
-                                @Html.RadioButtonFor(m => m.TypeOfUser, "Student")
-                            </div>
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Student</label>
-                        </div>
-                        <div class="form-group">
-                            <div type="radio" name="agree-term" id="agree-term" class="agree-term" value="option2">
-                                <span asp-validation-for="TypeOfUser" class="text-danger"></span>
-                                @Html.RadioButtonFor(m => m.TypeOfUser, "Instructor")
-                            </div>
-                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Instructor</label>
-                        </div>
+                      
 
                         <div class="form-group form-button">
                             <input type="submit" name="register" id="register" class="form-submit" value="register" />
@@ -68,3 +55,4 @@
     <partial name="_ValidationScriptsPartial" />
 }
 
+ *@

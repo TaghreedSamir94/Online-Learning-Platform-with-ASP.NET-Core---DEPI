@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using SkillUp.ActionRequests.RoleRequest;
 using SkillUp.DataAccessLayer;
 using SkillUp.DataAccessLayer.Entities;
-using SkillUp.VMs.User;
+using SkillUp.VMs;
 using System.Data.Entity;
-using System.Reflection.Metadata.Ecma335;
+using System.Drawing.Printing;
 
 
 namespace SkillUp.Controllers
@@ -14,87 +13,86 @@ namespace SkillUp.Controllers
     public class RoleController : Controller
     {
         // assign role
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<GeneralUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ApplicationDbContext _context;
 
-        public RoleController(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext context)
+        public RoleController(UserManager<GeneralUser> userManager, RoleManager<IdentityRole> roleManager, ApplicationDbContext context)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _context = context;
         }
-        [HttpPost]
-        public async Task<IActionResult> AssignRoleToUser(AssignRoleToUserActionRequset requset)
-        {
-            var user = await _userManager.FindByNameAsync(requset.UserName);
-            //not found userId is false
-            if(user ==null)
-            {
-                return NotFound("User  NOt Found");
-            }
-            //if user have a role or not 
-            var IsUserInRole = await _userManager.IsInRoleAsync(user, requset.RoleName);
-            if (!IsUserInRole)
-            {
-             var result = await _userManager.AddToRoleAsync(user, requset.RoleName);
-                if (result.Succeeded)
-                {
-                    return Ok("User Assigned to Role Succesfully");
-                }
-                return BadRequest(new
-                {
-                    massage ="Failed to assign user to role",
-                    errors=result.Errors
-                });
-            }
-            return BadRequest($"User is ALready in role {requset.RoleName}");
-        }
         [HttpGet]
-        public async Task<IActionResult> AssignUserRoles()
+        public async Task<IActionResult> AssignRoleToUser()
         {
-            var users = _userManager.Users.ToList();
-            var roles = _roleManager.Roles.ToList();
-            var model = new RolesVMs
-            {
-                Users =users.Select(u => new SelectListItem { Value =u.Id, Text =u.UserName }).ToList(),
-                Roles =roles.Select(u => new SelectListItem { Value =u.Id, Text =u.Name }).ToList(),
-
-            };
-            return View(model);
+            return View();
         }
+
         [HttpPost]
-        public async Task<IActionResult> CreateRole(CreateRoleActionRequest request)
+        public async Task<IActionResult> AssignRoleToUser(string userEmail, string roleName)
         {
-            if (string.IsNullOrWhiteSpace(request.RoleName))
+            var user = await _userManager.FindByEmailAsync(userEmail);
+            //not found userId is false
+            if (user !=null)
             {
-                return BadRequest("role name cannot be empty");
-            }
-             var IsRoleExists =await _roleManager.RoleExistsAsync(request.RoleName);
-            if (IsRoleExists)
-            {
-                return BadRequest("role already exists");
-            }
-                //save 
-                IdentityResult result = await _roleManager.CreateAsync(new IdentityRole (request.RoleName));
-                //if u succeded
-                if (result.Succeeded)
+                var roleExists = await _roleManager.RoleExistsAsync(roleName);
+                if (roleExists)
                 {
-                return RedirectToAction("listRoles", "Admin");
+                    var result = await _userManager.AddToRoleAsync(user, roleName);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("UserRoleList", new { email = userEmail });
+                    }
                 }
-                // show me errors and increase to role state 
-                foreach (IdentityError error in result.Errors)
-                {
-                    ModelState.AddModelError(error.Code, error.Description);
-                }
-            
-            return View(request);
+            }
+            ModelState.AddModelError("", "Role assigment failed.");
+            return View();
         }
-
         [HttpGet]
         public async Task<IActionResult> CreateRole()
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> CreateRole(CreateRoleActionRequest request)
+        {
+            if (!string.IsNullOrWhiteSpace(request.RoleName))
+            {
+                var roleExists = await _roleManager.RoleExistsAsync(request.RoleName);
+                if (!roleExists)
+                {
+                    IdentityResult result = await _roleManager.CreateAsync(new IdentityRole(request.RoleName));
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("RoleList");
+                    }
+                }
+            }
+            ModelState.AddModelError("", "role creation failed or role alrady exists.");
+            return View();
+
+        }
+        //get :list all roles
+        [HttpGet]
+        public IActionResult RoleList()
+        {
+            var roles = _roleManager.Roles;
+            return View(roles);
+        }
+        //get  : list roles for a specific user
+        [HttpGet]
+        public async Task<IActionResult> UserRoleList(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if(user == null)
+            {
+                return NotFound();
+            }
+            var roles = await _userManager.GetRolesAsync(user);
+            ViewBag.UserEmail =email;
+            return View(roles);
+        }
+
     }
 }

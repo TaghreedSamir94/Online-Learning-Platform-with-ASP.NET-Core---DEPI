@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SkillUp.DataAccessLayer.Enums
 {
-    public enum GenderTypes
+    public enum GenderEnum
     {
-        Female,
         Male,
+        Female,
+        Other
     }
 }

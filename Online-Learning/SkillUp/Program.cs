@@ -25,11 +25,10 @@ namespace SkillUp
             // Register repositories
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<ICoursesRepository, CoursesRepository>();
             // Register  services
             builder.Services.AddScoped<ICoursesService, CoursesService>();
-            builder.Services.AddScoped<IUserService, UserService>();
+
 
 
             // Register DB
@@ -51,7 +50,7 @@ namespace SkillUp
                  options.LoginPath = "/Account/SignIn";
              });
 
-            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            builder.Services.AddIdentity<GeneralUser, IdentityRole>(options =>
                               {
                                 options.Password.RequireDigit= true;
                                })
@@ -67,6 +66,8 @@ namespace SkillUp
                     options.AccessDeniedPath ="/Account/AccessDenied";
                 }
                 );
+              
+
 
             var app = builder.Build();
             
@@ -93,6 +94,45 @@ namespace SkillUp
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+        }
+        public static async Task SeedRolesAndAdminUser(IServiceProvider serviceProvider)
+        {
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<GeneralUser>>();
+
+            string[] roleNames = { "Admin", "Instructor", "Student" };
+
+            // Create roles if they do not exist
+            foreach (var roleName in roleNames)
+            {
+                var roleExist = await roleManager.RoleExistsAsync(roleName);
+                if (!roleExist)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(roleName));
+                }
+            }
+            // Create a default Admin user if it does not exist
+            var adminEmail = "admin@skillup.com";
+            var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+            if (adminUser == null)
+            {
+                var newAdminUser = new GeneralUser
+                {
+                    UserName = "admin",
+                    Email = adminEmail,
+                    EmailConfirmed = true
+                };
+
+                var adminPassword = "Admin@123"; // Choose a strong password
+                var createAdminUserResult = await userManager.CreateAsync(newAdminUser, adminPassword);
+
+                if (createAdminUserResult.Succeeded)
+                {
+                    // Assign Admin role to the user
+                    await userManager.AddToRoleAsync(newAdminUser, "Admin");
+                }
+            }
         }
     }
 }

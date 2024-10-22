@@ -1,4 +1,5 @@
 ﻿using SkillUp.DataAccessLayer.Entities;
+using SkillUp.DataAccessLayer.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,33 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace SkillUp.BussinessLayer.DTOs
+namespace SkillUp.BussinessLayer.DTOs.UsersDTOs
 {
-    public class UserDTO
+    public class GeneralUserDTO
     {
         [Required]
         public string UserName { get; set; }
         [Required]
+        public string Email { get; set; }
         public string Password { get; set; }
         [Required]
         public string ConfirmPassword { get; set; }
         [Required]
-        public string Email { get; set; }
-        [Required]
-        public string TypeOfUser { get; set; }
-
+        public GenderEnum Gender { get; set; }
+        public DateTime DateCreated { get; set; }
     }
-    public static class RegisterUserDTOExtensiions //  capy data and updated without change the original
+
+    public static class GeneralUserMappingExtensions
     {
-        public static User ToUser(this UserDTO dto)
-            => new User
+        public static GeneralUser ToEntity(this GeneralUserDTO dto)
+        {
+            return new GeneralUser
             {
                 UserName = dto.UserName,
                 Email = dto.Email,
-                PasswordHash = dto.Password,
-                TypeOfUser =dto.TypeOfUser
-
+                Gender = dto.Gender,
             };
+        }
+
     }
 }

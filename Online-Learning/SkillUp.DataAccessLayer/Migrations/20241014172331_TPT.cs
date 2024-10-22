@@ -5,7 +5,7 @@
 namespace SkillUp.DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class RoleMigration : Migration
+    public partial class TPT : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    AdminCode = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Department = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -33,7 +33,8 @@ namespace SkillUp.DataAccessLayer.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Deepartment = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Education = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -51,7 +52,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Major = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    University = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

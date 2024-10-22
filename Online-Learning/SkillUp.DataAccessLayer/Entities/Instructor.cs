@@ -9,8 +9,13 @@ using System.Threading.Tasks;
 namespace SkillUp.DataAccessLayer.Entities
 {
     [Table("Instructors")]
-    public class Instructor : User
+    public class Instructor : GeneralUser
     {
-        public string Deepartment { get; set; }
+        public string? Education { get; set; }
+        public string? Description { get; set; }
+        public override string ToString()
+        {
+            return $"admin{UserName} => Education ={Education} => Description ={Description}";
+        }
     }
 }

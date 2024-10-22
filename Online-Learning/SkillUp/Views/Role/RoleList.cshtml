@@ -2,7 +2,8 @@
 
 @model IEnumerable<IdentityRole>
 
-<table>
+<h2>Role List</h2>
+<table class="table">
     <thead>
         <tr>
             <th>Role name</th>
@@ -13,8 +14,9 @@
         @foreach (var role in Model)
         {
             <tr>
-              <td>@role.Name</td>
+                <td>@role.Name</td>
             </tr>
         }
     </tbody>
 </table>
+<a href="@Url.Action("CreateRole","Role")" class="btn btn-primary">Create new Role</a>

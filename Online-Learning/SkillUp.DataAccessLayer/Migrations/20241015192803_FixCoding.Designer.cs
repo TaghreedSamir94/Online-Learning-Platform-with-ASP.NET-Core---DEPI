@@ -12,8 +12,8 @@ using SkillUp.DataAccessLayer;
 namespace SkillUp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241012123830_RoleMigration")]
-    partial class RoleMigration
+    [Migration("20241015192803_FixCoding")]
+    partial class FixCoding
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -255,7 +255,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                         });
                 });
 
-            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.User", b =>
+            modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.GeneralUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -276,6 +276,9 @@ namespace SkillUp.DataAccessLayer.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -306,10 +309,6 @@ namespace SkillUp.DataAccessLayer.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<string>("TypeOfUser")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -331,9 +330,9 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Admin", b =>
                 {
-                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.GeneralUser");
 
-                    b.Property<string>("AdminCode")
+                    b.Property<string>("Department")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -342,10 +341,12 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Instructor", b =>
                 {
-                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.GeneralUser");
 
-                    b.Property<string>("Deepartment")
-                        .IsRequired()
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Education")
                         .HasColumnType("nvarchar(max)");
 
                     b.ToTable("Instructors");
@@ -353,10 +354,9 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Student", b =>
                 {
-                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.User");
+                    b.HasBaseType("SkillUp.DataAccessLayer.Entities.GeneralUser");
 
-                    b.Property<string>("Major")
-                        .IsRequired()
+                    b.Property<string>("University")
                         .HasColumnType("nvarchar(max)");
 
                     b.ToTable("Students");
@@ -373,7 +373,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -382,7 +382,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -397,7 +397,7 @@ namespace SkillUp.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -406,7 +406,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -415,7 +415,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Admin", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithOne()
                         .HasForeignKey("SkillUp.DataAccessLayer.Entities.Admin", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -424,7 +424,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Instructor", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithOne()
                         .HasForeignKey("SkillUp.DataAccessLayer.Entities.Instructor", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -433,7 +433,7 @@ namespace SkillUp.DataAccessLayer.Migrations
 
             modelBuilder.Entity("SkillUp.DataAccessLayer.Entities.Student", b =>
                 {
-                    b.HasOne("SkillUp.DataAccessLayer.Entities.User", null)
+                    b.HasOne("SkillUp.DataAccessLayer.Entities.GeneralUser", null)
                         .WithOne()
                         .HasForeignKey("SkillUp.DataAccessLayer.Entities.Student", "Id")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -1,27 +1,23 @@
-﻿
-@using SkillUp.ActionRequests.RoleRequest
-@model AssignRoleToUserActionRequset
-
+﻿@using SkillUp.VMs.RoleVMs
+@model AssignRoleToUserVms
 @{
     ViewData["Title"] = "Assign User To Role";
 }
+<div class="container mt-5">
+
 <form asp-action="AssignRoleToUser" method="post">
     <div class="form-group">
-        <label asp-for="UserName">User</label>
-        <select asp-for="UserName" class="from-control"></select>
-    </div><div class="form-group">
-        <label asp-for="RoleName">role</label>
-        <select asp-for="RoleName" class="from-control"></select>
+        <label asp-for="userEmail">User Email</label>
+        <input asp-for="userEmail" name="userEmail"class="form-control" id="userEmail" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="roleName">Role name</label>
+            <input asp-for="roleName" class="from-control" id="roleName" name="roleName" required />
     </div>
 
-    <button type="submit" class="btn btn-success">Assign Role </button>
+    <button type="submit" class="btn btn-primary">Assign Role </button>
 </form>
-@if (TempData["SuccessMassage"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["SuccessMassage"]
-    </div>
-}
+</div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

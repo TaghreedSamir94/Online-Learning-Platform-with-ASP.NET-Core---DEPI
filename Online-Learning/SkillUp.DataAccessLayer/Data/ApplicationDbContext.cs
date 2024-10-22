@@ -8,18 +8,19 @@ using SkillUp.DataAccessLayer.Entities;
 
 namespace SkillUp.DataAccessLayer
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class ApplicationDbContext : IdentityDbContext<GeneralUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet<GeneralUser> Users { get; set; }
         public DbSet<Courses> Courses { get; set; }
-        public DbSet<Admin> Admins { get; set; }
-        public DbSet<Instructor> Instructors { get; set; }
+        // i need regist instructor and student "lazm exists table"
         public DbSet<Student> Students { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Admins> Admins { get; set; }
+      
 
-    
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);  // Ensure Identity model configurations are applied
