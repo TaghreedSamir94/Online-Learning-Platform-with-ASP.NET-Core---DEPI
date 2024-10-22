@@ -1,0 +1,93 @@
+﻿@using SkillUP.DataAccessLayer.Entities.Users
+@using SkillUP.VMs.AdminDashboardVMs.MangerCoursesVMs
+@model List<NewCoursesVM>
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<GeneralUser> userManager
+
+
+@if (Model != null)
+{
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="course-item shadow">
+                    <div class="position-relative overflow-hidden text-light image">
+                        <img class="img-fluid" src="@Url.Content($"~/Images/Courses/{item.ImgUrl}")" alt="@item.Title">  <!--✅✅✅✅-->
+                        <div style="position:absolute;top: 15px;left: 16px; font-size:12px; border-radius:3px; background-color:#0ed44c;"
+                             class="px-2 py-1 fw-bold text-uppercase">
+                            @item.Price.ToString("N2") EGP
+                        </div>
+
+                    </div>
+                    <div class="p-2 pb-0">
+
+                        <h5 class="mb-1">@item.Title</h5>
+                    </div>
+
+                    <div class="d-flex">
+                       @*  <small class="flex-fill text-center py-1 px-2">
+                            <i class="fa fa-star text-warning me-2"></i>
+                            4.55
+                        </small> *@
+                        <small class="flex-fill text-left p-1 px-2">
+                            <i class="fa fa-clock me-2"></i>@item.TotalHours
+                            Hrs
+                        </small>
+                       
+                    </div>
+                    <!--------------------------------->
+                    <div class="d-flex">
+
+
+                        <small class="flex-fill text-left p-2 px-2">
+                            <i class="fa fa-user-edit me-2"></i>@item.InstructorName
+                        </small>
+                        <small class=" text-primary py-2 px-2 fw-bold fs-6" style="float:right;">
+                            <a onclick="@(User.Identity.IsAuthenticated ? $"location.href='/Home/GetCourseDetails/{item.Id}'" : "showLoginModal()")">
+                                Veiw Course
+                            </a><i class="fa fa-chevron-right me-2 fs-10"></i>
+                        </small>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+
+
+    <!-- Modal for login/registration -->
+    <div class="modal" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login or Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You need to be logged in to show Details or enroll in this course. Please login or register.</p>
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-secondary">Login</a>
+                    <a asp-controller="Account" asp-action="RegisterStudent" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+else
+{
+    <div>No courses available.</div>
+}
+
+
+<script>
+    function showLoginModal() {
+        $('#loginModal').modal('show');
+    }
+</script>
+

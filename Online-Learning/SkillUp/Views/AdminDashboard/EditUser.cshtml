@@ -1,0 +1,136 @@
+﻿@using SkillUP.VMs.AdminDashboardVMs.MangerUserVMs
+@model EditUserVM
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Edit Users</title>
+</head>
+
+<body class="nav-md">
+	<div class="right_col" role="main">
+		<div class="">
+			<div class="page-title">
+				<div class="title_left">
+					<h3>Manage Users</h3>
+				</div>
+
+				<div class="title_right">
+					<div class="col-md-5 col-sm-5  form-group pull-right top_search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 ">
+					<div class="x_panel">
+						<div class="x_title">
+							<h2>Edit User</h2>
+							
+							<div class="clearfix"></div>
+						</div>
+
+
+						<div class="x_content">
+							<br />
+
+							<form asp-controller="AdminDashboard" asp-action="EditUser" method="post" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+								<input type="hidden" asp-for="Email" />
+								<div class="item form-group">
+									<label asp-for="FullName" class="col-form-label col-md-3 col-sm-3 label-align"></label>
+									<div class="col-md-6 col-sm-6 ">
+										<input asp-for="FullName" class="form-control ">
+										<span asp-validation-for="FullName" class="text-danger"></span>
+									</div>
+								</div>
+
+								@* <div class="item form-group">
+									<label asp-for="Email" class="col-form-label col-md-3 col-sm-3 label-align"></label>
+									<div class="col-md-6 col-sm-6 ">
+										<input asp-for="Email" class="form-control ">
+										<span asp-validation-for="Email" class="text-danger"></span>
+									</div>
+								</div> *@
+
+								<div class="item form-group">
+									<label asp-for="Role" class="col-form-label col-md-3 col-sm-3 label-align"></label>
+									<div class="col-md-6 col-sm-6 ">
+										<select asp-for="Role" class="form-control" id="roleSelect">
+											<option value=" ">Select Role</option>
+											<option value="Instructor">Instructor</option>
+											<option value="Student">Student</option>
+											<option value="Admin">Admin</option>
+										</select>
+										<span asp-validation-for="Role" class="text-danger"></span>
+									</div>
+								</div>
+
+								<!-- Instructor-specific fields -->
+								<div class="item form-group" id="educationField" style="display:none;">
+									<label asp-for="Education" class="col-form-label col-md-3 col-sm-3 label-align"></label>
+									<div class="col-md-6 col-sm-6 ">
+										<input asp-for="Education" class="form-control ">
+										<span asp-validation-for="Education" class="text-danger"></span>
+									</div>
+								</div>
+
+								<div class="item form-group" id="descriptionField" style="display:none;">
+									<label asp-for="Description" class="col-form-label col-md-3 col-sm-3 label-align"></label>
+									<div class="col-md-6 col-sm-6 ">
+										<textarea id="tiny" asp-for="Description" class="form-control" placeholder="Description"></textarea>
+										<span asp-validation-for="Description" class="text-danger"></span>
+									</div>
+								</div>
+
+
+								<div class="ln_solid"></div>
+								<div class="item form-group">
+									<div class="col-md-6 col-sm-6 offset-md-3">
+										<a asp-controller="AdminDashboard" asp-action="Index" class="btn btn-danger">Cancel</a>
+										<button type="submit" class="btn btn-success">Update</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
+
+@section Scripts {
+	@await Html.PartialAsync("_ValidationScriptsPartial")
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#roleSelect').change(function () {
+				var selectedRole = $(this).val();
+				if (selectedRole === 'Instructor') {
+					$('#educationField, #descriptionField').show();
+				} else {
+					$('#educationField, #descriptionField').hide();
+					$('#educationField input, #descriptionField textarea').val('');
+				}
+			}).trigger('change'); // Trigger change event to set initial visibility
+		});
+	</script>
+}
+

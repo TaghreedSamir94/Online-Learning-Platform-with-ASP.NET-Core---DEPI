@@ -1,0 +1,95 @@
+﻿@using SkillUP.VMs.AccountVMs
+@model RegisteredAdminVM
+
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Signup as Admin</h1>
+           
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+<!-- Signup Start -->
+<div class="container-xxl py-2 mt-4">
+    <div class="container">
+
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.5s ">
+
+            <center>
+                <form asp-action="RegisterAdmin" method="post" class="shadow p-4" style="max-width: 550px;">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-5 bg-white text-center px-3">Signup</h1>
+
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input asp-for="FullName" class="form-control" placeholder="Enter Your Name">
+                                <label asp-for="FullName">Username</label>
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input asp-for="Email" class="form-control" placeholder="Email Address">
+                                <label asp-for="Email">Email Address</label>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+                                <label asp-for="Password">Password</label>
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Repeat your password">
+                                <label asp-for="ConfirmPassword">Confirm Password</label>
+                                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <label asp-for="Gender"></label>
+                                <select asp-for="Gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <input type="hidden" asp-for="Role" value="Admin" />
+
+                        <div class="col-12">
+                            <button class="btn text-light w-100 py-3" type="submit">Signup</button>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <p>
+                                Already have an account? <a class="text-decoration-none" asp-action="Login" asp-controller="Account">Login</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </center>
+
+        </div>
+    </div>
+</div>
+<!-- Signup End -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

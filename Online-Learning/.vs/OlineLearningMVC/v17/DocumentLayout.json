@@ -1,0 +1,632 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\shared\\_notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\shared\\_notifications.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\allusers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\courseslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\courseslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\vms\\admindashboardvms\\mangercoursesvms\\editcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\vms\\admindashboardvms\\mangercoursesvms\\editcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\deleteuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\deletecourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\deletecourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\vms\\admindashboardvms\\mangercoursesvms\\coursesectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\vms\\admindashboardvms\\mangercoursesvms\\coursesectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\actionrequests\\admindashboardactionreq\\mangercoursesactionreq\\coursesectionactionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\actionrequests\\admindashboardactionreq\\mangercoursesactionreq\\coursesectionactionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\home\\coursedetailspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\home\\coursedetailspage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\home\\allcoursespage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\home\\allcoursespage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\actionrequests\\admindashboardactionreq\\mangeruseractionreq\\adduseractionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\actionrequests\\admindashboardactionreq\\mangeruseractionreq\\adduseractionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\student\\myenrollments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\student\\myenrollments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\services\\adminusermangerservices\\usermangerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\services\\adminusermangerservices\\usermangerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\actionrequests\\admindashboardactionreq\\mangeruseractionreq\\edituseractionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\actionrequests\\admindashboardactionreq\\mangeruseractionreq\\edituseractionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\admindashboard\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\admindashboard\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\dtos\\admindashboarddtos\\manageusersdtos\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\dtos\\admindashboarddtos\\manageusersdtos\\adduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\vms\\admindashboardvms\\mangercoursesvms\\addcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\vms\\admindashboardvms\\mangercoursesvms\\addcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\actionrequests\\admindashboardactionreq\\mangercoursesactionreq\\addcourseactionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\actionrequests\\admindashboardactionreq\\mangercoursesactionreq\\addcourseactionreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.dataaccesslayer\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|solutionrelative:skillup.dataaccesslayer\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DA6E68-A9CA-42AF-B169-3AC16F90DC00}|SkillUP\\SkillUP.csproj|solutionrelative:skillup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|solutionrelative:skillup.dataaccesslayer\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.dataaccesslayer\\entities\\coursesection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|solutionrelative:skillup.dataaccesslayer\\entities\\coursesection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.dataaccesslayer\\data\\configrations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|solutionrelative:skillup.dataaccesslayer\\data\\configrations\\courseconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.dataaccesslayer\\repositories\\courserepositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF327DD-8834-40B6-8DD1-F2AE3D2D5CEE}|SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj|solutionrelative:skillup.dataaccesslayer\\repositories\\courserepositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\services\\admincoursemangerservices\\courseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\services\\admincoursemangerservices\\courseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\services\\admincoursemangerservices\\icourseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\services\\admincoursemangerservices\\icourseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\dtos\\admindashboarddtos\\mangecoursesdtos\\addsectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\dtos\\admindashboarddtos\\mangecoursesdtos\\addsectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|d:\\vs repo c#\\final-project-mvc\\onlinelearningmvc\\olinelearningmvc\\skillup.businesslayer\\dtos\\admindashboarddtos\\mangecoursesdtos\\addcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E804EC0-1930-4CE9-95FF-680BCE51CD59}|SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj|solutionrelative:skillup.businesslayer\\dtos\\admindashboarddtos\\mangecoursesdtos\\addcoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoursesList.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\CoursesList.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\CoursesList.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\CoursesList.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\CoursesList.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T13:42:30.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllUsers.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AllUsers.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\AllUsers.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AllUsers.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\AllUsers.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T13:42:19.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditUserActionReq.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\EditUserActionReq.cs",
+              "RelativeDocumentMoniker": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\EditUserActionReq.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\EditUserActionReq.cs",
+              "RelativeToolTip": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\EditUserActionReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:35:27.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AllCoursesPage.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Home\\AllCoursesPage.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Home\\AllCoursesPage.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Home\\AllCoursesPage.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Home\\AllCoursesPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T13:31:18.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SkillUP\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SkillUP\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T13:28:46.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddUserDTO.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\ManageUsersDTOs\\AddUserDTO.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\ManageUsersDTOs\\AddUserDTO.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\ManageUsersDTOs\\AddUserDTO.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\ManageUsersDTOs\\AddUserDTO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvzIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:51:30.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddUserActionReq.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\AddUserActionReq.cs",
+              "RelativeDocumentMoniker": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\AddUserActionReq.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\AddUserActionReq.cs",
+              "RelativeToolTip": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerUserActionReq\\AddUserActionReq.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:34:55.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "SkillUP\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "SkillUP\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:16:39.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAANkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:55:26.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserMangerService.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminUserMangerServices\\UserMangerService.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\Services\\AdminUserMangerServices\\UserMangerService.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminUserMangerServices\\UserMangerService.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\Services\\AdminUserMangerServices\\UserMangerService.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAuwG8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:35:19.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAAMsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T12:09:44.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MyEnrollments.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Student\\MyEnrollments.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Student\\MyEnrollments.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Student\\MyEnrollments.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Student\\MyEnrollments.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:56:05.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\EditUser.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\EditUser.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\EditUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:55:04.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeleteUser.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\DeleteUser.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\DeleteUser.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\DeleteUser.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\DeleteUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:54:58.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DeleteCourse.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\DeleteCourse.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\DeleteCourse.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\DeleteCourse.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\DeleteCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:54:53.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\AddUser.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AddUser.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\AddUser.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAJsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:54:41.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CourseDetailsPage.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Home\\CourseDetailsPage.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Home\\CourseDetailsPage.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Home\\CourseDetailsPage.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Home\\CourseDetailsPage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:53:07.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Notifications.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_Notifications.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\Shared\\_Notifications.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\Shared\\_Notifications.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\Shared\\_Notifications.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-22T11:50:16.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Program.cs",
+              "RelativeDocumentMoniker": "SkillUP\\Program.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Program.cs",
+              "RelativeToolTip": "SkillUP\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:45:47.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SkillUP.DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SkillUP.DataAccessLayer\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA7wBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:43:39.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CourseConfiguration.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Data\\Configrations\\CourseConfiguration.cs",
+              "RelativeDocumentMoniker": "SkillUP.DataAccessLayer\\Data\\Configrations\\CourseConfiguration.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Data\\Configrations\\CourseConfiguration.cs",
+              "RelativeToolTip": "SkillUP.DataAccessLayer\\Data\\Configrations\\CourseConfiguration.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:34:11.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Repositories\\CourseRepositories\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "SkillUP.DataAccessLayer\\Repositories\\CourseRepositories\\CourseRepository.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Repositories\\CourseRepositories\\CourseRepository.cs",
+              "RelativeToolTip": "SkillUP.DataAccessLayer\\Repositories\\CourseRepositories\\CourseRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA/wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T10:33:34.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "SkillUP.DataAccessLayer\\Entities\\Course.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Entities\\Course.cs",
+              "RelativeToolTip": "SkillUP.DataAccessLayer\\Entities\\Course.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:15:10.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AddSectionDTO.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddSectionDTO.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddSectionDTO.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddSectionDTO.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddSectionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:11:18.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CourseSectionActionReq.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\CourseSectionActionReq.cs",
+              "RelativeDocumentMoniker": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\CourseSectionActionReq.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\CourseSectionActionReq.cs",
+              "RelativeToolTip": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\CourseSectionActionReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T21:08:07.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddCourseActionReq.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\AddCourseActionReq.cs",
+              "RelativeDocumentMoniker": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\AddCourseActionReq.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\AddCourseActionReq.cs",
+              "RelativeToolTip": "SkillUP\\ActionRequests\\AdminDashboardActionReq\\MangerCoursesActionReq\\AddCourseActionReq.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA1wBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:53:40.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AddCourseDTO.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddCourseDTO.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddCourseDTO.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddCourseDTO.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\DTOs\\AdminDashboardDTOs\\MangeCoursesDTOs\\AddCourseDTO.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:45:52.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CourseSection.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Entities\\CourseSection.cs",
+              "RelativeDocumentMoniker": "SkillUP.DataAccessLayer\\Entities\\CourseSection.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\Entities\\CourseSection.cs",
+              "RelativeToolTip": "SkillUP.DataAccessLayer\\Entities\\CourseSection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:24:09.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CourseSectionVM.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\CourseSectionVM.cs",
+              "RelativeDocumentMoniker": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\CourseSectionVM.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\CourseSectionVM.cs",
+              "RelativeToolTip": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\CourseSectionVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:23:43.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddCourseVM.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\AddCourseVM.cs",
+              "RelativeDocumentMoniker": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\AddCourseVM.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\AddCourseVM.cs",
+              "RelativeToolTip": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\AddCourseVM.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:20:02.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditCourseVM.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\EditCourseVM.cs",
+              "RelativeDocumentMoniker": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\EditCourseVM.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\EditCourseVM.cs",
+              "RelativeToolTip": "SkillUP\\VMs\\AdminDashboardVMs\\MangerCoursesVMs\\EditCourseVM.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:15:30.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddCourse.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AddCourse.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\AddCourse.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\AddCourse.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\AddCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T20:14:49.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICourseServices.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\ICourseServices.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\ICourseServices.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\ICourseServices.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\ICourseServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T20:09:36.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CourseServices.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\CourseServices.cs",
+              "RelativeDocumentMoniker": "SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\CourseServices.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\CourseServices.cs",
+              "RelativeToolTip": "SkillUP.BusinessLayer\\Services\\AdminCourseMangerServices\\CourseServices.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAA2wBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T19:12:58.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "SkillUP\\Views\\AdminDashboard\\EditCourse.cshtml",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Views\\AdminDashboard\\EditCourse.cshtml",
+              "RelativeToolTip": "SkillUP\\Views\\AdminDashboard\\EditCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T18:26:46.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboardController.cs",
+              "DocumentMoniker": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\AdminDashboardController.cs",
+              "RelativeDocumentMoniker": "SkillUP\\Controllers\\AdminDashboardController.cs",
+              "ToolTip": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP\\Controllers\\AdminDashboardController.cs",
+              "RelativeToolTip": "SkillUP\\Controllers\\AdminDashboardController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAcwEAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T18:04:22.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

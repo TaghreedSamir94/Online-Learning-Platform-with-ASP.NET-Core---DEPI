@@ -1,71 +1,139 @@
 is_global = true
 build_property.TargetFramework = net8.0
-build_property.TargetFramework = net8.0
-build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
-build_property.UsingMicrosoftNETSdkWeb = true
-build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
-build_property.InvariantGlobalization = 
-build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = SkillUp
-build_property.RootNamespace = SkillUp
-build_property.ProjectDir = D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp\
+build_property.RootNamespace = SkillUP
+build_property.RootNamespace = SkillUP
+build_property.ProjectDir = D:\VS REPO C#\Final-Project-MVC\OnlineLearningMVC\OlineLearningMVC\SkillUP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\VS REPO C#\Final-Project-MVC\Online-Learning-Platform-with-ASP.NET-Core---DEPI\Online-Learning\SkillUp
+build_property.MSBuildProjectDirectory = D:\VS REPO C#\Final-Project-MVC\OnlineLearningMVC\OlineLearningMVC\SkillUP
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/AdminHomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkhvbWVQYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Admin/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/InstructorHomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN0cnVjdG9ySG9tZVBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/RegisterAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlckFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/RegisterInstructor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlckluc3RydWN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Areas/Users/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlcnNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Account/RegisterStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RlclN0dWRlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/Error.cshtml]
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRkQ291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/AllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/CoursesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcQ291cnNlc0xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/DeleteCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRGVsZXRlQ291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/DeleteUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRGVsZXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/EditCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRWRpdENvdXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/AdminDashboard/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/AllCoursesPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxDb3Vyc2VzUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/CourseDetailsPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VEZXRhaWxzUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/HomeCoursesSection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lQ291cnNlc1NlY3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Home/TrendigCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmVuZGlnQ291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewImports.cshtml]
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Student/MyEnrollments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxNeUVucm9sbG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/Student/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/_ViewStart.cshtml]
+[D:/VS REPO C\#/Final-Project-MVC/OnlineLearningMVC/OlineLearningMVC/SkillUP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/VS REPO C\#/Final-Project-MVC/Online-Learning-Platform-with-ASP.NET-Core---DEPI/Online-Learning/SkillUp/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-7z5uk2kolo

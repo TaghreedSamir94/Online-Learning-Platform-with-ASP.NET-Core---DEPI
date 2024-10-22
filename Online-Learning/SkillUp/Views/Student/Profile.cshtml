@@ -1,0 +1,46 @@
+﻿@using SkillUP.VMs.ProfileVMs
+@model UserProfileVM
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header text-center bg-info text-white">
+                    <h2>@Model.FullName's Profile</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Email:</strong>
+                            <p>@Model.Email</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Gender:</strong>
+                            <p>@Model.Gender</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>User Type:</strong>
+                            <p>@Model.UserType</p>
+                        </div>
+
+                        @if (Model.EnrollmentsCount.HasValue)
+                        {
+                            <div class="col-md-6">
+                                <strong>Enrollments:</strong>
+                                <p>@Model.EnrollmentsCount</p>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a asp-controller="Student" asp-action="MyCourses" class="btn btn-warning">Your Courses</a>
+                        <a href="#" class="btn btn-warning">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
