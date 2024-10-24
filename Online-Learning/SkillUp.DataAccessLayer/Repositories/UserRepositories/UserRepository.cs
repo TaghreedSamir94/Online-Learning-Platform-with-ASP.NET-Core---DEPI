@@ -19,6 +19,11 @@ namespace SkillUP.DataAccessLayer.Repositories.UserRepositories
             return await _dbSet.Include(u => (u as Student).Enrollments)  .FirstOrDefaultAsync(u => u.Id == userId);
         }
 
+        public async Task<List<GeneralUser>> SearchUserByName(string name)
+        {
+            return await _dbSet.Where(u => u.UserName.Trim().ToLower().Contains(name.Trim().ToLower())).ToListAsync();
+        }
+
 
     }
 }

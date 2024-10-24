@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EcFoTxfp++0=",
+  "dgSpecHash": "V49bTrdly9I=",
   "success": true,
-  "projectFilePath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
+  "projectFilePath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eng taghreed\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\eng taghreed\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

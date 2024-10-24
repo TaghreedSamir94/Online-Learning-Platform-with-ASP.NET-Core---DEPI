@@ -17,6 +17,33 @@ namespace SkillUP.DataAccessLayer.Repositories.CourseRepositories
         {
         }
 
+        public async Task<List<Course>> SearchCoursesAsync(string searchTerm, float? minPrice, float? maxPrice, int? totalHours)
+        {
+            var query = _context.Courses.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(c => c.Title.Contains(searchTerm) || c.Instructor.FullName.Contains(searchTerm));
+            }
+
+            if (minPrice.HasValue)
+            {
+                query = query.Where(c => c.Price >= minPrice.Value);
+            }
+
+            if (maxPrice.HasValue)
+            {
+                query = query.Where(c => c.Price <= maxPrice.Value);
+            }
+            if (totalHours.HasValue)
+            {
+                query = query.Where(c => c.TotalHours <= totalHours.Value);
+
+            }
+
+            return query.ToList();
+        }
+
         public async Task<List<Course>> GetAllCoursesWithInstructorAsync()
         {
             return await _dbSet.Include(c => c.Instructor).ToListAsync();

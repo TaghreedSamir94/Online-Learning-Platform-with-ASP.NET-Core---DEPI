@@ -18,5 +18,7 @@ namespace SkillUP.BusinessLayer.Services.AdminCourseMangerServices
         Task<CourseDetailsDTO?> GetById(int id);
         Task<CourseDetailsDTO?> GetCourseByIdWithStudent(int id,string studentId);
         Task<List<NewCoursesDTO>> GetLastCourses(int count); //to display limit num of courses in home page
+
+        Task<List<CoursesListDTO>> SearchCoursesAsync(string searchTerm, float? minPrice, float? maxPrice, int? totalHours);
     }
 }

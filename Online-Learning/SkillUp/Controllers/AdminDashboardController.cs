@@ -30,9 +30,19 @@ namespace SkillUP.Controllers
 		#region Mange Users
 
 		#region GetAllUsers
-		public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index(string searchValue = "")
         {
-            var users = await _userMangerService.GetAllUsersAsync();
+            IEnumerable<UserListDTO> users = null;
+
+            if (string.IsNullOrWhiteSpace(searchValue))
+            {
+                users = await _userMangerService.GetAllUsersAsync();
+            }
+            else if (!string.IsNullOrEmpty(searchValue))
+            {
+                users = await _userMangerService.SearchUsersByNameAsync(searchValue);
+            }
+            //var users = await _userMangerService.GetAllUsersAsync();
 
             // Use explicit operator to map each UserListDTO to UserListVM
             var userVMs = users.Select(u => (UserListVM)u).ToList();
@@ -63,7 +73,7 @@ namespace SkillUP.Controllers
                 await _userMangerService.AddUserAsync(addUserDTO);
                 
                 TempData["success"] = "User added successfully";
-                TempData.Keep();
+              
 
                 return RedirectToAction("Index");
             }
@@ -113,7 +123,7 @@ namespace SkillUP.Controllers
 
                 await _userMangerService.UpdateUserAsync(editUserDto);
                 TempData["success"] = "User Updated successfully";
-                TempData.Keep();
+               
                 return RedirectToAction("Index");
             }
 
@@ -158,7 +168,6 @@ namespace SkillUP.Controllers
             {
                 await _userMangerService.DeleteUserAsync(deleteUserRequest.Email);
                 TempData["success"] = "User Deleted successfully";
-                TempData.Keep();
                 return RedirectToAction("Index");
             }
             catch (Exception ex)

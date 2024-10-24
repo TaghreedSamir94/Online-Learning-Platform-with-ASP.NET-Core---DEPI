@@ -166,8 +166,15 @@ namespace SkillUP.BusinessLayer.Services.AdminUserMangerServices
             var instructors = users.OfType<Instructor>(); // Filter only Instructor objects
             return instructors.Select(InstructorDTO.FromUser).ToList();
         }
-		#endregion
+        #endregion
 
-	
-	}
+
+        #region Search user by Name
+        public async Task<List<UserListDTO>> SearchUsersByNameAsync(string name)
+        {
+            var users = await _userRepository.SearchUserByName(name);
+            return users.Select(UserListDTO.FromUser).ToList();
+        }
+        #endregion
+    }
 }

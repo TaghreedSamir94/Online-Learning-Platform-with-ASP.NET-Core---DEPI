@@ -2,7 +2,7 @@
 @using SkillUP.VMs.AdminDashboardVMs.MangerCoursesVMs
 @model AddCourseVM
 
-<partial name="~/Views/Shared/_Notifications.cshtml" />
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -155,6 +155,7 @@
 
 </body>
 </html>
+@await Html.PartialAsync("_Notifications")
 
 @section Scripts {
 	<partial name="_ValidationScriptsPartial" />

@@ -30,6 +30,31 @@
         </div>
     </div>
     <!-- Header End -->
+    <!-- Search Form Start -->
+    <div class="container">
+        <form asp-action="Search" method="get">
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="searchTerm">Search:</label>
+                    <input type="text" class="form-control" id="searchTerm" name="searchTerm" value="@ViewBag.SearchTerm" />
+                </div>
+                <div class="col">
+                    <label for="minPrice">Min Price:</label>
+                    <input type="number" class="form-control" id="minPrice" name="minPrice" value="@ViewBag.MinPrice" />
+                </div>
+                <div class="col">
+                    <label for="maxPrice">Max Price:</label>
+                    <input type="number" class="form-control" id="maxPrice" name="maxPrice" value="@ViewBag.MaxPrice" />
+                </div>
+                <div class="col">
+                    <label for="totalHours">Total Hours:</label>
+                    <input type="number" class="form-control" id="totalHours" name="totalHours" value="@ViewBag.TotalHours" />
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+    <!-- Search Form End -->
     <!-- Courses Start -->
 
 

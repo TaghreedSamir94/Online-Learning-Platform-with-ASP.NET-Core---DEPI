@@ -12,7 +12,8 @@ namespace SkillUP.DataAccessLayer.Repositories.UserRepositories
 	{
 		Task<GeneralUser> GetByEmailAsync(string email);
 		Task<GeneralUser> GetStudProfileByIdAsync(string userId);
-       
+        Task<List<GeneralUser>> SearchUserByName(string name);
+
 
     }
 }

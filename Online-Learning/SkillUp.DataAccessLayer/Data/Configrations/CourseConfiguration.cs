@@ -18,7 +18,7 @@ namespace SkillUP.DataAccessLayer.Data.Configrations
 				   .HasMaxLength(20000); 
 
 			builder.Property(c => c.Price)
-				   .HasPrecision(18, 2) // Decimal precision: max 18 digits, 2 decimals
+				   .HasPrecision(18, 2) // Decimal precision: max 18 dgt
 				   .IsRequired(); 
 
 			builder.Property(c => c.TotalHours)

@@ -4220,11 +4220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
+      "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
       "projectName": "SkillUP.DataAccessLayer",
-      "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
+      "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-      "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\obj\\",
+      "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",

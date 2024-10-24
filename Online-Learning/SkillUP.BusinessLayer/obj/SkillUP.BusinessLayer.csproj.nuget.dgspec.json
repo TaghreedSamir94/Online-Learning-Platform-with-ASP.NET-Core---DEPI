@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj": {}
+    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj": {
+    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj",
+        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj",
         "projectName": "SkillUP.BusinessLayer",
-        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj",
+        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.BusinessLayer\\SkillUP.BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.BusinessLayer\\obj\\",
+        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj": {
-                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj"
+              "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj": {
+                "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj": {
+    "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
         "projectName": "SkillUP.DataAccessLayer",
-        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
+        "projectPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\SkillUP.DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\eng taghreed\\.nuget\\packages\\",
-        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\OnlineLearningMVC\\OlineLearningMVC\\SkillUP.DataAccessLayer\\obj\\",
+        "outputPath": "D:\\VS REPO C#\\Final-Project-MVC\\Online-Learning-Platform-with-ASP.NET-Core---DEPI\\Online-Learning\\SkillUP.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eng taghreed\\AppData\\Roaming\\NuGet\\NuGet.Config",

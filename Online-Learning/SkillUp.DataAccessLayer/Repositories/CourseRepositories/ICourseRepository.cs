@@ -13,5 +13,6 @@ namespace SkillUP.DataAccessLayer.Repositories.CourseRepositories
         Task<List<Course>> GetLastCoursesAsync(int count);
         Task<List<Course>> GetAllCoursesWithInstructorAsync();
         Task<Course> GetDetails(int id);
+        Task<List<Course>> SearchCoursesAsync(string searchTerm, float? minPrice, float? maxPrice, int? totalHours);
     }
 }

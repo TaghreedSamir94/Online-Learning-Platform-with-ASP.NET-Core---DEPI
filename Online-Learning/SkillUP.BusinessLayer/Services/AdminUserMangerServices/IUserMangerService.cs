@@ -14,5 +14,7 @@ namespace SkillUP.BusinessLayer.Services.AdminUserMangerServices
         // Task<EditUserDTO> GetUserByIdAsync(string id);
 
         Task<List<InstructorDTO>> GetAllInstructorsAsync();
+
+        Task<List<UserListDTO>> SearchUsersByNameAsync(string name);
     }
 }

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!---<title>AdminDashboard</title>--->
+    <script src="~/AdminAssets/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link href="~/AdminAssets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +33,8 @@
     <link href="~/AdminAssets/build/css/custom.min.css" rel="stylesheet">
 
     <!-- toaster -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 
 
     <!-- Tiny McE -->
@@ -161,6 +163,10 @@
 
             <div>
                 @RenderBody()
+                @await Html.PartialAsync("_Notifications")
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+               
             </div>
             <footer>
                 <div class="pull-right">
@@ -204,10 +210,7 @@
 
     <!-- Custom Theme Scripts -->
     <script src="~/AdminAssets/build/js/custom.min.js"></script>
-@section Scripts {
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-}
+
     <!-- Validation Scripts Partial -->
     @await Html.PartialAsync("_ValidationScriptsPartial")
   

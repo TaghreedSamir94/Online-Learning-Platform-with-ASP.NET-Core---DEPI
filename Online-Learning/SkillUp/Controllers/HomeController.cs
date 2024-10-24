@@ -63,6 +63,34 @@ namespace SkillUP.Controllers
 		}
 
 
+        public async Task<IActionResult> Search(string searchTerm, float? minPrice, float? maxPrice, int? totalHours)
+        {
+            if (!string.IsNullOrEmpty(searchTerm) || minPrice.HasValue || maxPrice.HasValue || totalHours.HasValue)
+            {
+                var courses = await _coursesServ.SearchCoursesAsync(searchTerm, minPrice, maxPrice, totalHours);
+
+                // Use the explicit conversion operator to map DTO to VM
+                var coursesListVM = courses.Select(c => (CourseListVM)c).ToList();
+
+                ViewBag.SearchTerm = searchTerm;
+                ViewBag.MinPrice = minPrice;
+                ViewBag.MaxPrice = maxPrice;
+                ViewBag.TotalHours = totalHours;
+
+                return View("AllCoursesPage", coursesListVM);
+            }
+            else
+            {
+                var allCourses = await _coursesServ.GetAll();
+
+                // Use the explicit conversion operator to map DTO to VM
+                var coursesListVM = allCourses.Select(c => (CourseListVM)c).ToList();
+
+                return View("AllCoursesPage", coursesListVM);
+            }
+        }
+
+
 
         public IActionResult Privacy()
 		{

@@ -156,5 +156,15 @@ namespace SkillUP.BusinessLayer.Services.AdminCourseMangerServices
                 await _courseRepository.SaveAsync();
             
         }
+
+
+        public async Task<List<CoursesListDTO>> SearchCoursesAsync(string searchTerm, float? minPrice, float? maxPrice, int? totalHours)
+        {
+            // Retrieve the courses based on the search criteria
+            var courses = await _courseRepository.SearchCoursesAsync(searchTerm, minPrice, maxPrice, totalHours);
+
+            // Map the courses to CoursesListDTO
+            return courses.Select(CoursesListDTO.MapFromEntity).ToList();
+        }
     }
 }
