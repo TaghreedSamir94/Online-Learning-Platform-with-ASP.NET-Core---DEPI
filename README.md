@@ -42,4 +42,7 @@
 ### Cloud & Services  
 - **IWebHostEnvironment** – Handling file uploads and environment-specific configurations.  
 
+## Project Overview
+
+[![Watch the video](https://github.com/TaghreedSamir94/Online-Learning-Platform-with-ASP.NET-Core---DEPI/blob/main/DB%20Diagrams/Screenshot%20(6).png)](https://www.youtube.com/watch?v=00uLr7oiYSc)
 
